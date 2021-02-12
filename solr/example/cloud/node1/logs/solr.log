@@ -1,0 +1,391 @@
+2021-02-12 08:47:13.284 INFO  (main) [   ] o.e.j.u.log Logging initialized @761ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-02-12 08:47:13.416 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 11.0.9.1+1-Ubuntu-0ubuntu1.20.04
+2021-02-12 08:47:13.433 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/server/contexts/] at interval 0
+2021-02-12 08:47:13.668 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-02-12 08:47:13.675 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-02-12 08:47:13.675 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-02-12 08:47:13.677 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-02-12 08:47:13.730 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-02-12 08:47:13.734 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.0
+2021-02-12 08:47:13.734 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2021-02-12 08:47:13.734 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr
+2021-02-12 08:47:13.734 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-02-12T08:47:13.734500Z
+2021-02-12 08:47:13.764 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/example/cloud/node1/solr
+2021-02-12 08:47:13.764 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/example/cloud/node1/solr/solr.xml
+2021-02-12 08:47:13.824 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31, but no JMX reporters were configured - adding default JMX reporter.
+2021-02-12 08:47:14.238 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-02-12 08:47:14.365 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3c4262d1[provider=null,keyStore=null,trustStore=null]
+2021-02-12 08:47:14.365 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3c4262d1[provider=null,keyStore=null,trustStore=null]
+2021-02-12 08:47:14.503 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@37af1f93[provider=null,keyStore=null,trustStore=null]
+2021-02-12 08:47:14.503 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@37af1f93[provider=null,keyStore=null,trustStore=null]
+2021-02-12 08:47:14.559 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/example/cloud/node1/solr/zoo.cfg
+2021-02-12 08:47:14.562 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+2021-02-12 08:47:14.562 WARN  (main) [   ] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2021-02-12 08:47:14.601 WARN  (Thread-11) [   ] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2021-02-12 08:47:15.062 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2021-02-12 08:47:15.172 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-02-12 08:47:15.232 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-02-12 08:47:15.232 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-02-12 08:47:15.294 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-02-12 08:47:15.340 INFO  (main) [   ] o.a.s.c.ZkController Publish node=127.0.1.1:8983_solr as DOWN
+2021-02-12 08:47:15.352 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-02-12 08:47:15.352 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:8983_solr
+2021-02-12 08:47:15.366 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-02-12 08:47:15.393 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-02-12 08:47:15.404 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-02-12 08:47:15.506 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-02-12 08:47:15.577 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-02-12 08:47:15.578 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-02-12 08:47:15.584 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-02-12 08:47:15.621 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/example/cloud/node1/solr
+2021-02-12 08:47:15.680 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@22d6f11{/solr,file:///home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/server/solr-webapp/webapp}
+2021-02-12 08:47:15.688 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@c5dc4a2{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-02-12 08:47:15.689 INFO  (main) [   ] o.e.j.s.Server Started @3168ms
+2021-02-12 08:47:36.847 INFO  (qtp1935122449-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1613119656702} status=0 QTime=32
+2021-02-12 08:47:36.849 INFO  (qtp1935122449-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1613119656702} status=0 QTime=34
+2021-02-12 08:47:36.855 INFO  (qtp1935122449-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1613119656702} status=0 QTime=40
+2021-02-12 08:47:36.902 INFO  (qtp1935122449-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1613119656702} status=0 QTime=0
+2021-02-12 08:47:36.920 INFO  (qtp1935122449-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1613119656702} status=0 QTime=2
+2021-02-12 08:47:36.935 WARN  (qtp1935122449-19) [   ] o.a.s.h.a.AdminHandlersProxy Exception when fetching result from node 127.0.1.1:7574_solr => java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://127.0.1.1:7574/solr
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://127.0.1.1:7574/solr
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) ~[?:?]
+	at org.apache.solr.handler.admin.AdminHandlersProxy.maybeProxyToNodes(AdminHandlersProxy.java:105) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHandler.handleRequestBody(MetricsHandler.java:105) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:836) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:800) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:545) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://127.0.1.1:7574/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:688) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.lambda$httpUriRequest$0(HttpSolrClient.java:310) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	... 1 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.1.1:7574 [/127.0.1.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[?:?]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[?:?]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[?:?]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[?:?]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[?:?]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:571) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.lambda$httpUriRequest$0(HttpSolrClient.java:310) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	... 1 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[?:?]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[?:?]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[?:?]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[?:?]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[?:?]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[?:?]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:571) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.lambda$httpUriRequest$0(HttpSolrClient.java:310) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	... 1 more
+2021-02-12 08:47:36.935 WARN  (qtp1935122449-25) [   ] o.a.s.h.a.AdminHandlersProxy Exception when fetching result from node 127.0.1.1:7574_solr => java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://127.0.1.1:7574/solr
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://127.0.1.1:7574/solr
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) ~[?:?]
+	at org.apache.solr.handler.admin.AdminHandlersProxy.maybeProxyToNodes(AdminHandlersProxy.java:105) ~[?:?]
+	at org.apache.solr.handler.admin.SystemInfoHandler.handleRequestBody(SystemInfoHandler.java:133) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.handler.admin.InfoHandler.handle(InfoHandler.java:96) ~[?:?]
+	at org.apache.solr.handler.admin.InfoHandler.handleRequestBody(InfoHandler.java:86) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:836) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:800) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:545) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://127.0.1.1:7574/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:688) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.lambda$httpUriRequest$0(HttpSolrClient.java:310) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	... 1 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.1.1:7574 [/127.0.1.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[?:?]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[?:?]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[?:?]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[?:?]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[?:?]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:571) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.lambda$httpUriRequest$0(HttpSolrClient.java:310) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	... 1 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[?:?]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[?:?]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[?:?]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[?:?]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[?:?]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[?:?]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:571) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.lambda$httpUriRequest$0(HttpSolrClient.java:310) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	... 1 more
+2021-02-12 08:47:36.956 INFO  (qtp1935122449-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1613119656702} status=0 QTime=17
+2021-02-12 08:47:36.977 INFO  (qtp1935122449-25) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [127.0.1.1:7574_solr, 127.0.1.1:8983_solr]
+2021-02-12 08:47:36.977 INFO  (qtp1935122449-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=127.0.1.1:7574_solr,127.0.1.1:8983_solr&wt=json&_=1613119656702} status=0 QTime=108
+2021-02-12 08:47:36.978 INFO  (qtp1935122449-19) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [127.0.1.1:7574_solr, 127.0.1.1:8983_solr]
+2021-02-12 08:47:44.960 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 127.0.1.1:8983_solr
+2021-02-12 08:47:44.961 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2021-02-12 08:47:44.974 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72057884480110592-127.0.1.1:8983_solr-n_0000000002) starting
+2021-02-12 08:47:45.060 INFO  (OverseerStateUpdate-72057884480110592-127.0.1.1:8983_solr-n_0000000002) [   ] o.a.s.c.Overseer Starting to work on the main queue : 127.0.1.1:8983_solr
+2021-02-12 08:48:25.027 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-02-12 08:48:47.986 INFO  (OverseerThreadFactory-27-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.a.c.CreateCollectionCmd Create collection US-Elections
+2021-02-12 08:48:48.175 INFO  (OverseerStateUpdate-72057884480110592-127.0.1.1:8983_solr-n_0000000002) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "operation":"ADDREPLICA",
+  "collection":"US-Elections",
+  "shard":"shard1",
+  "core":"US-Elections_shard1_replica_n1",
+  "state":"down",
+  "node_name":"127.0.1.1:8983_solr",
+  "type":"NRT",
+  "waitForFinalState":"false"} 
+2021-02-12 08:48:48.184 INFO  (OverseerStateUpdate-72057884480110592-127.0.1.1:8983_solr-n_0000000002) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "operation":"ADDREPLICA",
+  "collection":"US-Elections",
+  "shard":"shard1",
+  "core":"US-Elections_shard1_replica_n2",
+  "state":"down",
+  "node_name":"127.0.1.1:7574_solr",
+  "type":"NRT",
+  "waitForFinalState":"false"} 
+2021-02-12 08:48:48.194 INFO  (OverseerStateUpdate-72057884480110592-127.0.1.1:8983_solr-n_0000000002) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "operation":"ADDREPLICA",
+  "collection":"US-Elections",
+  "shard":"shard2",
+  "core":"US-Elections_shard2_replica_n5",
+  "state":"down",
+  "node_name":"127.0.1.1:8983_solr",
+  "type":"NRT",
+  "waitForFinalState":"false"} 
+2021-02-12 08:48:48.203 INFO  (OverseerStateUpdate-72057884480110592-127.0.1.1:8983_solr-n_0000000002) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "operation":"ADDREPLICA",
+  "collection":"US-Elections",
+  "shard":"shard2",
+  "core":"US-Elections_shard2_replica_n6",
+  "state":"down",
+  "node_name":"127.0.1.1:7574_solr",
+  "type":"NRT",
+  "waitForFinalState":"false"} 
+2021-02-12 08:48:48.437 INFO  (qtp1935122449-25) [   x:US-Elections_shard2_replica_n5] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node7&collection.configName=US-Elections&newCollection=true&name=US-Elections_shard2_replica_n5&action=CREATE&numShards=2&collection=US-Elections&shard=shard2&wt=javabin&version=2&replicaType=NRT
+2021-02-12 08:48:48.437 INFO  (qtp1935122449-24) [   x:US-Elections_shard1_replica_n1] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node3&collection.configName=US-Elections&newCollection=true&name=US-Elections_shard1_replica_n1&action=CREATE&numShards=2&collection=US-Elections&shard=shard1&wt=javabin&version=2&replicaType=NRT
+2021-02-12 08:48:48.459 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.c.ZkStateReader already watching , added to stateWatchers
+2021-02-12 08:48:48.460 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.c.ZkStateReader already watching , added to stateWatchers
+2021-02-12 08:48:48.525 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.0
+2021-02-12 08:48:48.525 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.0
+2021-02-12 08:48:48.778 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.s.IndexSchema Schema name=default-config
+2021-02-12 08:48:48.791 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2021-02-12 08:48:49.557 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-02-12 08:48:49.568 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-02-12 08:48:49.660 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'US-Elections_shard1_replica_n1' using configuration from configset US-Elections, trusted=true
+2021-02-12 08:48:49.666 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.CoreContainer Creating SolrCore 'US-Elections_shard2_replica_n5' using configuration from configset US-Elections, trusted=true
+2021-02-12 08:48:49.678 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.US-Elections.shard2.replica_n5' (registry 'solr.core.US-Elections.shard2.replica_n5') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-02-12 08:48:49.688 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.US-Elections.shard1.replica_n1' (registry 'solr.core.US-Elections.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-02-12 08:48:49.712 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.SolrCore [[US-Elections_shard2_replica_n5] ] Opening new SolrCore at [/home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/example/cloud/node1/solr/US-Elections_shard2_replica_n5], dataDir=[/home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/example/cloud/node1/solr/US-Elections_shard2_replica_n5/data/]
+2021-02-12 08:48:49.717 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.SolrCore [[US-Elections_shard1_replica_n1] ] Opening new SolrCore at [/home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/example/cloud/node1/solr/US-Elections_shard1_replica_n1], dataDir=[/home/adi/Workspace/Projects/school/Info-Retrieval-Group-Project/solr/example/cloud/node1/solr/US-Elections_shard1_replica_n1/data/]
+2021-02-12 08:48:51.132 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-02-12 08:48:51.132 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-02-12 08:48:51.132 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-02-12 08:48:51.133 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-02-12 08:48:51.155 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-02-12 08:48:51.155 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-02-12 08:48:51.155 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-02-12 08:48:51.156 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-02-12 08:48:51.252 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/US-Elections
+2021-02-12 08:48:51.253 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/US-Elections
+2021-02-12 08:48:51.260 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/US-Elections
+2021-02-12 08:48:51.262 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/US-Elections
+2021-02-12 08:48:51.266 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/US-Elections/managed-schema
+2021-02-12 08:48:51.266 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/US-Elections/managed-schema
+2021-02-12 08:48:51.271 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-02-12 08:48:51.279 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-02-12 08:48:51.294 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-02-12 08:48:51.298 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-02-12 08:48:51.314 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-02-12 08:48:51.317 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-02-12 08:48:51.337 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-02-12 08:48:51.342 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-02-12 08:48:51.353 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1691478635423203328
+2021-02-12 08:48:51.354 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1691478635424251904
+2021-02-12 08:48:51.367 INFO  (searcherExecutor-31-thread-1-processing-n:127.0.1.1:8983_solr x:US-Elections_shard1_replica_n1 c:US-Elections s:shard1 r:core_node3) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-02-12 08:48:51.367 INFO  (searcherExecutor-30-thread-1-processing-n:127.0.1.1:8983_solr x:US-Elections_shard2_replica_n5 c:US-Elections s:shard2 r:core_node7) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-02-12 08:48:51.367 INFO  (searcherExecutor-31-thread-1-processing-n:127.0.1.1:8983_solr x:US-Elections_shard1_replica_n1 c:US-Elections s:shard1 r:core_node3) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-02-12 08:48:51.367 INFO  (searcherExecutor-30-thread-1-processing-n:127.0.1.1:8983_solr x:US-Elections_shard2_replica_n5 c:US-Elections s:shard2 r:core_node7) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-02-12 08:48:51.369 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.c.ZkStateReader already watching , added to stateWatchers
+2021-02-12 08:48:51.370 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.c.ZkStateReader already watching , added to stateWatchers
+2021-02-12 08:48:51.380 INFO  (searcherExecutor-31-thread-1-processing-n:127.0.1.1:8983_solr x:US-Elections_shard1_replica_n1 c:US-Elections s:shard1 r:core_node3) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.SolrCore [US-Elections_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-02-12 08:48:51.385 INFO  (searcherExecutor-30-thread-1-processing-n:127.0.1.1:8983_solr x:US-Elections_shard2_replica_n5 c:US-Elections s:shard2 r:core_node7) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.SolrCore [US-Elections_shard2_replica_n5]  Registered new searcher autowarm time: 0 ms
+2021-02-12 08:48:51.444 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ZkShardTerms Successful update of terms at /collections/US-Elections/terms/shard2 to Terms{values={core_node7=0}, version=0}
+2021-02-12 08:48:51.463 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ZkShardTerms Successful update of terms at /collections/US-Elections/terms/shard1 to Terms{values={core_node3=0}, version=0}
+2021-02-12 08:48:51.470 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/US-Elections/leaders/shard2
+2021-02-12 08:48:51.470 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/US-Elections/leaders/shard1
+2021-02-12 08:48:51.508 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=179995ms
+2021-02-12 08:48:51.509 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=179996ms
+2021-02-12 08:48:52.010 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2021-02-12 08:48:52.011 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-02-12 08:48:52.011 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.SyncStrategy Sync replicas to http://127.0.1.1:8983/solr/US-Elections_shard2_replica_n5/
+2021-02-12 08:48:52.012 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2021-02-12 08:48:52.012 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-02-12 08:48:52.012 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.SyncStrategy Sync replicas to http://127.0.1.1:8983/solr/US-Elections_shard1_replica_n1/
+2021-02-12 08:48:52.017 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.u.PeerSync PeerSync: core=US-Elections_shard1_replica_n1 url=http://127.0.1.1:8983/solr  START replicas=[http://127.0.1.1:7574/solr/US-Elections_shard1_replica_n2/] nUpdates=100
+2021-02-12 08:48:52.017 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.u.PeerSync PeerSync: core=US-Elections_shard2_replica_n5 url=http://127.0.1.1:8983/solr  START replicas=[http://127.0.1.1:7574/solr/US-Elections_shard2_replica_n6/] nUpdates=100
+2021-02-12 08:48:52.017 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.u.PeerSync PeerSync: core=US-Elections_shard2_replica_n5 url=http://127.0.1.1:8983/solr  DONE. We have no versions. sync failed.
+2021-02-12 08:48:52.018 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.u.PeerSync PeerSync: core=US-Elections_shard1_replica_n1 url=http://127.0.1.1:8983/solr  DONE. We have no versions. sync failed.
+2021-02-12 08:48:52.030 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2021-02-12 08:48:52.030 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2021-02-12 08:48:52.030 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2021-02-12 08:48:52.030 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2021-02-12 08:48:52.031 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/US-Elections/leaders/shard1/leader after winning as /collections/US-Elections/leader_elect/shard1/election/72057884480110592-core_node3-n_0000000000
+2021-02-12 08:48:52.031 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/US-Elections/leaders/shard2/leader after winning as /collections/US-Elections/leader_elect/shard2/election/72057884480110592-core_node7-n_0000000000
+2021-02-12 08:48:52.048 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://127.0.1.1:8983/solr/US-Elections_shard1_replica_n1/ shard1
+2021-02-12 08:48:52.050 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://127.0.1.1:8983/solr/US-Elections_shard2_replica_n5/ shard2
+2021-02-12 08:48:52.051 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.c.ZkStateReader already watching , added to stateWatchers
+2021-02-12 08:48:52.051 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.c.ZkStateReader already watching , added to stateWatchers
+2021-02-12 08:48:52.162 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/US-Elections/state.json] for collection [US-Elections] has occurred - updating... (live nodes size: [2])
+2021-02-12 08:48:52.167 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-02-12 08:48:52.167 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-02-12 08:48:52.175 INFO  (qtp1935122449-25) [c:US-Elections s:shard2 r:core_node7 x:US-Elections_shard2_replica_n5] o.a.s.c.c.ZkStateReader already watching , added to stateWatchers
+2021-02-12 08:48:52.176 INFO  (qtp1935122449-24) [c:US-Elections s:shard1 r:core_node3 x:US-Elections_shard1_replica_n1] o.a.s.c.c.ZkStateReader already watching , added to stateWatchers
+2021-02-12 08:48:52.178 INFO  (qtp1935122449-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node3&collection.configName=US-Elections&newCollection=true&name=US-Elections_shard1_replica_n1&action=CREATE&numShards=2&collection=US-Elections&shard=shard1&wt=javabin&version=2&replicaType=NRT} status=0 QTime=3742
+2021-02-12 08:48:52.178 INFO  (qtp1935122449-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node7&collection.configName=US-Elections&newCollection=true&name=US-Elections_shard2_replica_n5&action=CREATE&numShards=2&collection=US-Elections&shard=shard2&wt=javabin&version=2&replicaType=NRT} status=0 QTime=3742
+2021-02-12 08:48:52.280 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/US-Elections/state.json] for collection [US-Elections] has occurred - updating... (live nodes size: [2])
+2021-02-12 08:48:52.280 INFO  (zkCallback-10-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/US-Elections/state.json] for collection [US-Elections] has occurred - updating... (live nodes size: [2])
+2021-02-12 08:48:52.860 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/US-Elections/state.json] for collection [US-Elections] has occurred - updating... (live nodes size: [2])
+2021-02-12 08:48:52.860 INFO  (zkCallback-10-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/US-Elections/state.json] for collection [US-Elections] has occurred - updating... (live nodes size: [2])
+2021-02-12 08:48:54.003 INFO  (OverseerCollectionConfigSetProcessor-72057884480110592-127.0.1.1:8983_solr-n_0000000002) [   ] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000008 doesn't exist. Requestor may have disconnected from ZooKeeper
+2021-02-12 08:48:57.474 INFO  (qtp1935122449-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1613119737406} status=0 QTime=0
+2021-02-12 08:48:57.477 INFO  (qtp1935122449-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1613119737406} status=0 QTime=3
+2021-02-12 08:48:57.482 INFO  (qtp1935122449-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1613119737407} status=0 QTime=9
+2021-02-12 08:48:57.501 INFO  (qtp1935122449-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1613119737406} status=0 QTime=0
+2021-02-12 08:48:57.531 INFO  (qtp1935122449-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1613119737407} status=0 QTime=12
+2021-02-12 08:48:57.535 INFO  (qtp1935122449-25) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [127.0.1.1:7574_solr, 127.0.1.1:8983_solr]
+2021-02-12 08:48:57.536 INFO  (qtp1935122449-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=127.0.1.1:7574_solr,127.0.1.1:8983_solr&wt=json&_=1613119737407} status=0 QTime=29
+2021-02-12 08:48:57.560 INFO  (qtp1935122449-16) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [127.0.1.1:7574_solr, 127.0.1.1:8983_solr]
+2021-02-12 08:48:57.576 INFO  (qtp1935122449-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1613119737406} status=0 QTime=1
