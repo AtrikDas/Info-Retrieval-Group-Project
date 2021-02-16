@@ -1,12 +1,22 @@
-{% extends 'layout.html' %}
-
-{% block body %}
+{% extends 'layout.html' %} {% block body %}
 <div class="col">
-    <form class="mt-5" name="search" action="/search_results">
-        <div class="col-6 mx-auto input-group">
-            <input type="text" class="form-control" name="search" placeholder="search...">
-            <button type="submit" class="btn btn-info">Search</button>
-        </div>
-    </form>
+	<form class="mt-5" name="search" action="/search_results">
+		<div class="col-6 mx-auto input-group">
+			<input
+				type="text"
+				class="form-control"
+				name="search"
+				value="{{search_query}}"
+			/>
+			<button type="submit" class="btn btn-info">Search</button>
+		</div>
+	</form>
+	{% if tweets %} {% for tweet in tweets %}
+	<div>{{tweet}}</div>
+	<br />
+	<br />
+	{% endfor %} {% else %}
+	<div>{{error}}</div>
+	{% endif %}
 </div>
 {% endblock %}
