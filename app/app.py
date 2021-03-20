@@ -1,7 +1,9 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file, send_from_directory
 import os
-from utils import filter 
+from utils import filter, geospatial_graph
+import os
 
+BASE_DIR = os.getcwd()
 application = Flask(__name__)
 
 PORT = os.getenv('PORT', 8000)
@@ -32,6 +34,16 @@ def search_results():
 @application.route("/sentiment")
 def sentiment():
     return render_template('pages/sentiment_analysis.html')
+
+
+@application.route("/geospatial_search")
+def geospatial_search():
+    return render_template("pages/geospatial_search.html", plot = geospatial_graph())
+
+
+@application.route("/plotly/<filename>")
+def plotly(filename):
+    return send_from_directory(f"{BASE_DIR}/js/", filename=filename)
 
 
 if __name__ == "__main__":
