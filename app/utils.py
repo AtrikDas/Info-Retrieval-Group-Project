@@ -34,11 +34,14 @@ def rank_tweets(search_query, tweets):
         content = content.split(' ')
         for word in content:
             all_words.add(word)
-    print(len(all_words))
-
+    df = document_frequency(tweets, all_words)
+    tf_query = calculate_term_frequency(search_query, all_words, "log")
+    normalized_query_score = {}
+    for word in all_words:
+        normalized_query_score[word] = df[word] * 
     return tweets
 
-def calculate_term_frequency(content, all_words):
+def calculate_term_frequency(content, all_words, mode = None):
     tf = {}
     for word in content:
         if word in tf:
@@ -49,12 +52,22 @@ def calculate_term_frequency(content, all_words):
         if word not in tf:
             tf[word] = 0
 
-    for key in tf.keys:
-        tf[key] = 1 + math.log(tf[key])
+    if mode == "log":
+        for key in tf.keys:
+            tf[key] = 1 + math.log(tf[key])
     return tf
 
-def document_frequency(tweets, ):
-    pass
+def document_frequency(tweets, all_words):
+    df = {}
+    for word in all_words:
+        value = 0
+        for content in tweets:
+            content = content[0]
+            if word in content:
+                value += 1
+        df[word] = value
+    return df
+
 
 if __name__ == "__main__":
     filter("trump")
