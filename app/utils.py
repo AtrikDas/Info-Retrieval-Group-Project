@@ -53,6 +53,8 @@ def calculate_term_frequency(content, all_words):
         tf[key] = 1 + math.log(tf[key])
     return tf
 
+def document_frequency(tweets, ):
+    pass
 
 if __name__ == "__main__":
     filter("trump")
