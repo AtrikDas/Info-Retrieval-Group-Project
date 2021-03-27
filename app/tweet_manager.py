@@ -58,6 +58,8 @@ class TweetManager:
         tweets = TweetManager.get_tweets_by_exact_match(query)
         if len(tweets) != 10:
             similar_tweets = TweetManager.get_tweets_by_similarity(query)
-            tweets = tweets + similar_tweets[:10-len(similar_tweets)] 
+            tweets = tweets + similar_tweets[:10-len(similar_tweets)]
+        if len(tweets) == 0:
+            return []
         ranked_tweets = TweetManager.rank_tweets(query, tweets)
         return ranked_tweets
