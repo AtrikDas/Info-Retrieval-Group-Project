@@ -1,42 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head lang="en">
-		<meta charset="UTF-8" />
-		<title>US Presidential Elections</title>
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		/>
-		<script
-			type="text/javascript"
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-		></script>
-		{% include 'components/_navbar.html' %}
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-	</head>
-	<body class="bg-dark text-white">
-		<!-- <div class="col-6 mx-auto">
-			<!-- <div class="chart" id="bargraph">
-				<script>
-					var graphs = {{plot | safe}};
-					Plotly.plot('Choropleth', graphs, {});
-					// Plotly.graph(plot);
-				</script>
-				{{plot}}
-			</div> -->
-			<div>
-			<script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-			<script type="text/javascript" src="/plotly/1.min.js"></script>
-			<div id="0a07c91e-37eb-4705-808e-1099a6b569f4" class="plotly-graph-div" style="height:100%; width:100%;"></div>
-			<script type="text/javascript" src="/plotly/2.min.js"></script>
-			</div>
-	</body>
-</html>
+{% extends 'layout.html' %} {% block body %}
+<div>
+	<script type="text/javascript">
+		window.PlotlyConfig = { MathJaxConfig: 'local' };
+	</script>
+	<script type="text/javascript" src="/plotly/1.min.js"></script>
+	<div
+		id="0a07c91e-37eb-4705-808e-1099a6b569f4"
+		class="plotly-graph-div"
+		style="height: 100%; width: 100%"
+	></div>
+	<script type="text/javascript" src="/plotly/2.min.js"></script>
+</div>
+{% endblock %}

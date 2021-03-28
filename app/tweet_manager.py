@@ -7,7 +7,8 @@ import pandas as pd
 
 class TweetManager:
     solr = pysolr.Solr('http://localhost:8983/solr/luck', always_commit=True)
-
+    solr.optimize()
+    
     @staticmethod
     def get_tweets_by_exact_match(query):
         try:

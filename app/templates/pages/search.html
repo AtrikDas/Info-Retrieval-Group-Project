@@ -1,6 +1,6 @@
 {% extends 'layout.html' %} {% block body %}
-<div class="col">
-	<div class="col mt-5"></div>
+<header class="jumbotron my-4" style="text-align: center; margin-top: 0">
+	<h1 class="display-3">Searchify</h1>
 	<form class="mt-5" name="search" action="/search_results">
 		<div class="col-6 mx-auto input-group">
 			<input
@@ -9,8 +9,9 @@
 				name="search"
 				placeholder="search..."
 			/>
-			<button type="submit" class="btn btn-info">Search</button>
+			<button type="submit" class="btn btn-primary">Search</button>
 		</div>
-	</form>
-</div>
+
+</header>
+<h3 style="text-align: center;color: #1abc9c;">Top Tweets according to most number of retweets</h3><br>
 {% endblock %}
