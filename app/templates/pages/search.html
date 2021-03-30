@@ -2,16 +2,47 @@
 <header class="jumbotron my-4" style="text-align: center; margin-top: 0">
 	<h1 class="display-3">Searchify</h1>
 	<form class="mt-5" name="search" action="/search_results">
-		<div class="col-6 mx-auto input-group">
+		<div class="col-6 mx-auto input-group" style="white-space: nowrap">
 			<input
 				type="text"
 				class="form-control"
 				name="search"
 				placeholder="search..."
+				required
 			/>
 			<button type="submit" class="btn btn-primary">Search</button>
 		</div>
-
+	</form>
+	<label for="rank">Rank Mode</label>
+	<select name="rank" id="rank">
+		<option value="Most Relevant">Most Relevant</option>
+		<option value="Likes">Likes</option>
+		<option value="Retweets">Retweets</option>
+	</select>
+	<br />
+	<input type="checkbox" id="country1" name="country1" value="Brazil" />
+	<label for="Brazil">Brazil</label><br />
+	<input type="checkbox" id="country2" name="country2" value="Mexico" />
+	<label for="Mexico">Mexico</label><br />
+	<input type="checkbox" id="country3" name="country3" value="Canada" />
+	<label for="Canada">Canada</label><br />
+	<input type="checkbox" id="country4" name="country4" value="UK" />
+	<label for="UK">UK</label><br />
+	<input type="checkbox" id="country5" name="country5" value="India" />
+	<label for="India">India</label><br />
+	<input type="checkbox" id="country6" name="country6" value="South Korea" />
+	<label for="South Korea">South Korea</label><br />
+	<input type="checkbox" id="country7" name="country7" value="Iran" />
+	<label for="Iran">Iran</label><br />
+	<input type="checkbox" id="country8" name="country8" value="Israel" />
+	<label for="Israel">Israel</label><br />
+	<input type="checkbox" id="country9" name="country9" value="Russia" />
+	<label for="Russia">Russia</label><br />
+	<input type="checkbox" id="country10" name="country10" value="Ukraine" />
+	<label for="Ukraine">Ukraine</label>
 </header>
-<h3 style="text-align: center;color: #1abc9c;">Top Tweets according to most number of retweets</h3><br>
+<!-- <h3 style="text-align: center; color: #1abc9c">
+	Top Tweets according to most number of retweets
+</h3>
+<br /> -->
 {% endblock %}

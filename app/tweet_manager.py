@@ -30,11 +30,11 @@ class TweetManager:
         return tweets
     
     @staticmethod
-    def rank_tweets(search_query, tweets):
+    def rank_tweets(query, tweets):
         tweet_content = [tweet['content'][0] for tweet in tweets]
         vectorizer = TfidfVectorizer()
         content = tweet_content.copy()
-        content.insert(0, search_query)
+        content.insert(0, query)
         vectors = vectorizer.fit_transform(content)
         feature_names = vectorizer.get_feature_names()
         dense = vectors.todense().tolist()

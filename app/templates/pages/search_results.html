@@ -17,38 +17,14 @@
 
 </header>
 <div class="col">
-	{% for tweet in tweets %}
-	<div class="panel-group">
-
-		<div class="panel panel-default">
-			<div class="panel-body">
-				<div class="media">
-					<div class="media-left">
-						<a href="http://www.twitter.com/{{tweet.name}}">
-							<img class="img-circle" src="{{tweet.profile_image}}" alt="image" width="50" height="50">
-						</a>
-					</div>
-				<div class="media-body">
-					<a href="http://www.twitter.com/{{tweet.name}}">
-						<h4 class="media-heading"><strong>{{tweet.name}}</strong></h4>
-					</a>
-					<p class="content">
-				   {{tweet.content}}
-					</p>
-					<br />
-					<div class="row">
-						<div class="col-sm-9">
-						
-							<div class="col-sm-4"><span class="glyphicon glyphicon-retweet" aria-hidden="true"></span><small class="text-muted"> &nbsp;{{tweet.retweet_count}}</small></div>
-							<div class="col-sm-4"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><small class="text-muted"> &nbsp;{{tweet.like}}</small></div>
-
-						</div>
-					</div>
-
-				</div>
-				</div>
-			</div>
-		</div> {% endfor %}
-	<!-- <div>{{error}}</div> -->
+	{% if tweets %}
+		{% for tweet in tweets %}
+			<div class="panel-group">{{tweet}}
+			<br />
+			<br />
+		{% endfor %}
+	{% else %}
+			<div>{{error}}</div>
+	{% endif %}
 </div>
 {% endblock %}
