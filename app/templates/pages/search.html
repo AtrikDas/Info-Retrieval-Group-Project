@@ -1,69 +1,67 @@
 {% extends 'layout.html' %} {% block body %}
+
 <link href="main.css" rel="stylesheet">
+
 <header class="jumbotron my-4" style="text-align: center; margin-top: 0">
+
 	<h1 class="display-3">Searchify</h1>
 	<form class="mt-5" name="search" action="/search_results">
 		<div class="col-6 mx-auto input-group" style="white-space: nowrap">
-			<input
-				type="text"
-				class="form-control"
-				name="search"
-				placeholder="search..."
-				required
-			/>
+			<input type="text" class="form-control" name="search" placeholder="search..." required />
 			<button type="submit" class="btn btn-primary">Search</button>
 		</div>
 	</form>
+
 	<label for="rank">Rank Mode</label>
 	<select class="form-select" name="rank" id="rank" aria-label="Default select example">
 		<option selected>Open this select menu</option>
-		
+
 		<option value="Most Relevant">Most Relevant</option>
 		<option value="Likes">Likes</option>
 		<option value="Retweets">Retweets</option>
 	</select>
 	<br />
-	
-	<div class="row">  
+
+	<div class="row">
 		<div class="col-md-4 "></div>
-	  <div class="col-md-4" style="text-align:center">
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox"id="country1" name="country1" value="">Brazil</label>
-	  </div>
-		<div class="checkbox form-check-inline" >
-		<label><input type="checkbox" id="country2" name="country2" value="">Mexico</label>
-	  </div>
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox" id="country3" name="countr3" value="">India</label>
-	  </div>
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox" id="country4" name="country4" value="">Canada</label>
-	  </div>
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox" id="country5" name="country5" value="">UK</label>
-	  </div>
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox" id="country6" name="country6" value="">South Korea</label>
-	  </div>
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox" id="country7" name="country7" value="">Iran</label>
-	  </div>
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox" id="country8" name="country8" value="">Israel</label>
-	  </div>
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox" id="country9" name="country9" value="">Russia</label>
-	  </div>
-	  <div class="checkbox form-check-inline">
-		<label><input type="checkbox" id="country10" name="country10"value="">Ukraine</label>
-	  </div>
-	 </div>
-			<div class="col-md-4 "></div>
+		<div class="col-md-4" style="text-align:center">
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country1" name="country1" value="">Brazil</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country2" name="country2" value="">Mexico</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country3" name="countr3" value="">India</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country4" name="country4" value="">Canada</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country5" name="country5" value="">UK</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country6" name="country6" value="">South Korea</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country7" name="country7" value="">Iran</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country8" name="country8" value="">Israel</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country9" name="country9" value="">Russia</label>
+			</div>
+			<div class="checkbox form-check-inline">
+				<label><input type="checkbox" id="country10" name="country10" value="">Ukraine</label>
+			</div>
+		</div>
+		<div class="col-md-4 "></div>
 	</div>
 	<!-- <input type="checkbox" id="country9" name="country9" value="Russia" />
 	<label for="Russia">Russia</label><br />
 	<input type="checkbox" id="country10" name="country10" value="Ukraine" />
-	<label for="Ukraine">Ukraine</label> --> 
+	<label for="Ukraine">Ukraine</label> -->
 </header>
 <!-- <h3 style="text-align: center; color: #1abc9c">
 	Top Tweets according to most number of retweets

@@ -1,12 +1,14 @@
-# from tweet_manager import TweetManager
+from tweet_manager import TweetManager
 import plotly.express as px
 import dash_core_components as dcc
 import dash_html_components as html
 
 def filter(search_query):
-    # ranked_tweets = TweetManager.extract_tweets(search_query)
-    ranked_tweets = ["dONALD DUCK"]
-    return ranked_tweets
+    ranked_tweets = TweetManager.extract_tweets(search_query)
+    spellcheck_suggestions = TweetManager.spell_check(search_query)
+    #print(ranked_tweets)
+    # ranked_tweets = ["dONALD DUCK"]
+    return ranked_tweets, spellcheck_suggestions
 
 
 def geospatial_graph():

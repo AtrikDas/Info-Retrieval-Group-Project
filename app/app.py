@@ -23,11 +23,13 @@ def search():
 def search_results():
     search_query = request.args.get("search")
     if search_query:
-        text = "content:"+search_query
-        tweets = filter(text)
+        text = "content:" + search_query
+        tweets, suggestions = filter(text)
+        print("search results : ", suggestions)
+        print("search results : ", tweets)
         if len(tweets) == 0:
-            return render_template('pages/search_results.html', search_query = search_query, error = "No tweets Found", tweets = None)
-        return render_template('pages/search_results.html', search_query = search_query, error= None, tweets = tweets)
+            return render_template('pages/search_results.html', search_query = search_query, error = "No tweets Found", tweets = None, suggestions=suggestions)
+        return render_template('pages/search_results.html', search_query = search_query, error= None, tweets = tweets, suggestions=suggestions)
     return render_template('pages/search.html')
 
 
