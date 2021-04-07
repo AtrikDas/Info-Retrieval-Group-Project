@@ -5,6 +5,9 @@ import numpy as np
 import pandas as pd
 import requests
 import json
+import dateutil.parser
+import datetime
+
 
 class TweetManager:
     solr = pysolr.Solr('http://localhost:8983/solr/final_core', always_commit=True)
@@ -80,7 +83,14 @@ class TweetManager:
     
     @staticmethod
     def extract_tweets(query):
-        tweets = TweetManager.get_tweets_by_exact_match(query)
+
+        tweets = TweetManager.get_tweets_by_exact_match(query)     
+        yourdate = datetime.datetime.strptime(tweets[0]['date'][0], "%Y-%m-%dT%H:%M:%SZ")
+        print("Date :", yourdate)
+        print("Date Type :", type(yourdate))
+
+        for tweet in tweets:
+            tweet['date'][0] = datetime.datetime.strptime(tweet['date'][0], "%Y-%m-%dT%H:%M:%SZ")
 
         if len(tweets) != 10:
             similar_tweets = TweetManager.get_tweets_by_similarity(query)

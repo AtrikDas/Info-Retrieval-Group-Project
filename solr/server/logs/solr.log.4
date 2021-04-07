@@ -1,0 +1,611 @@
+2021-04-06 12:22:32.578 INFO  (main) [   ] o.e.j.u.log Logging initialized @4063ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-04-06 12:22:33.049 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_282-b08
+2021-04-06 12:22:33.111 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/contexts/] at interval 0
+2021-04-06 12:22:35.099 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-04-06 12:22:35.135 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-04-06 12:22:35.135 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-04-06 12:22:35.141 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-04-06 12:22:35.324 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-04-06 12:22:35.338 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.0
+2021-04-06 12:22:35.338 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-04-06 12:22:35.338 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr
+2021-04-06 12:22:35.340 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-04-06T12:22:35.340Z
+2021-04-06 12:22:35.366 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr
+2021-04-06 12:22:35.368 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\solr.xml
+2021-04-06 12:22:35.653 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701, but no JMX reporters were configured - adding default JMX reporter.
+2021-04-06 12:22:36.973 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-04-06 12:22:37.391 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6bb75258[provider=null,keyStore=null,trustStore=null]
+2021-04-06 12:22:37.391 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6bb75258[provider=null,keyStore=null,trustStore=null]
+2021-04-06 12:22:37.725 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5df417a7[provider=null,keyStore=null,trustStore=null]
+2021-04-06 12:22:37.725 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5df417a7[provider=null,keyStore=null,trustStore=null]
+2021-04-06 12:22:37.904 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-04-06 12:22:38.295 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-04-06 12:22:38.301 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-04-06 12:22:38.494 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-04-06 12:22:38.496 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-04-06 12:22:38.510 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-04-06 12:22:38.632 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr
+2021-04-06 12:22:38.633 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [final_core]
+2021-04-06 12:22:38.723 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.0
+2021-04-06 12:22:39.112 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-06 12:22:39.973 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-06 12:22:39.973 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-06 12:22:39.973 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-06 12:22:39.973 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-06 12:22:39.973 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-06 12:22:39.988 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-06 12:22:39.988 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-06 12:22:39.988 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-06 12:22:39.988 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-06 12:22:39.988 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-06 12:22:40.226 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@3012646b{/solr,file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server/solr-webapp/webapp}
+2021-04-06 12:22:40.257 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2beee7ff{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-04-06 12:22:40.258 INFO  (main) [   ] o.e.j.s.Server Started @11748ms
+2021-04-06 12:22:40.456 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-06 12:22:40.581 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.CoreContainer Creating SolrCore 'final_core' using configuration from instancedir C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core, trusted=true
+2021-04-06 12:22:40.670 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.final_core' (registry 'solr.core.final_core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-04-06 12:22:40.725 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrCore [[final_core] ] Opening new SolrCore at [C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core], dataDir=[C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core\data\]
+2021-04-06 12:22:42.162 INFO  (qtp2134607032-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=96
+2021-04-06 12:22:42.372 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-04-06 12:22:42.372 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-04-06 12:22:42.449 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-06 12:22:42.449 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-06 12:22:43.125 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core\conf
+2021-04-06 12:22:43.162 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-06 12:22:43.181 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-06 12:22:43.208 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-06 12:22:43.260 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-06 12:22:43.260 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-06 12:22:43.278 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.SolrCore [final_core]  Registered new searcher autowarm time: 0 ms
+2021-04-06 12:23:34.775 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 163
+2021-04-06 12:23:38.954 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 12:25:12.202 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:donald&wt=json} hits=888 status=0 QTime=257
+2021-04-06 12:25:12.293 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,attributes = {startup=lazy, name=/spell, class=solr.SearchHandler},args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=5,spellcheck.collate=true,spellcheck.collateExtendedResults=true,spellcheck.maxCollationTries=10,spellcheck.maxCollations=5,df=_text_},last-components=[spellcheck]}} 
+2021-04-06 12:25:12.445 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=151
+2021-04-06 12:39:05.837 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:donald&wt=json} hits=888 status=0 QTime=5
+2021-04-06 12:39:05.875 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=23
+2021-04-06 12:40:02.121 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:singapore&wt=json} hits=0 status=0 QTime=3
+2021-04-06 12:40:02.150 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=18
+2021-04-06 12:40:25.347 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:usa&wt=json} hits=426 status=0 QTime=10
+2021-04-06 12:40:25.433 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=27
+2021-04-06 12:44:19.574 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=10
+2021-04-06 12:44:19.655 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=26
+2021-04-06 12:45:36.369 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=2
+2021-04-06 12:45:36.416 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=24
+2021-04-06 12:45:58.750 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=2
+2021-04-06 12:45:58.800 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=22
+2021-04-06 12:47:42.069 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=1
+2021-04-06 12:47:42.095 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=11
+2021-04-06 12:49:03.716 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:world&wt=json} hits=412 status=0 QTime=2
+2021-04-06 12:49:03.759 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=9
+2021-04-06 12:50:16.572 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:world&wt=json} hits=412 status=0 QTime=2
+2021-04-06 12:50:16.617 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=18
+2021-04-06 12:50:26.343 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=9
+2021-04-06 12:50:26.399 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=17
+2021-04-06 12:51:39.179 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=1
+2021-04-06 12:51:39.201 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=7
+2021-04-06 12:53:36.296 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=1
+2021-04-06 12:53:36.338 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=18
+2021-04-06 12:54:43.117 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=2
+2021-04-06 12:54:43.161 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=18
+2021-04-06 12:55:13.592 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=1
+2021-04-06 12:55:13.618 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=9
+2021-04-06 12:55:30.426 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=1
+2021-04-06 12:55:30.449 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=8
+2021-04-06 12:56:00.912 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=1
+2021-04-06 12:56:00.952 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=16
+2021-04-06 12:56:29.271 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=3
+2021-04-06 12:56:29.314 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=17
+2021-04-06 12:58:17.769 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=2
+2021-04-06 12:58:17.813 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=14
+2021-04-06 12:58:25.742 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:india&wt=json} hits=119 status=0 QTime=1
+2021-04-06 12:58:25.785 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=16
+2021-04-06 12:58:50.880 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&wt=json} hits=3288 status=0 QTime=7
+2021-04-06 12:58:50.927 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=11
+2021-04-06 13:00:43.010 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 13:01:55.574 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 13:01:59.753 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 13:02:38.180 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&wt=json} hits=3288 status=0 QTime=0
+2021-04-06 13:02:38.198 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=true&spellcheck=true} hits=0 status=0 QTime=7
+2021-04-06 13:03:33.224 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 13:03:44.658 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&wt=json} hits=3288 status=0 QTime=1
+2021-04-06 13:03:44.736 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=content:trump&spellcheck=true} hits=0 status=0 QTime=49
+2021-04-06 13:04:20.330 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=7
+2021-04-06 13:04:20.357 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=content:bidan&spellcheck=true} hits=0 status=0 QTime=12
+2021-04-06 13:04:23.964 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q={}&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-06 13:04:34.426 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=Bidan&spellcheck=true} hits=0 status=0 QTime=11
+2021-04-06 13:05:31.269 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 9
+2021-04-06 13:05:36.662 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=2
+2021-04-06 13:05:36.699 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=content:bidan&spellcheck=true} hits=0 status=0 QTime=15
+2021-04-06 13:09:10.557 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 4
+2021-04-06 13:09:16.673 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=2
+2021-04-06 13:09:16.711 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=content:bidan&spellcheck=true} hits=0 status=0 QTime=14
+2021-04-06 13:09:59.750 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 4
+2021-04-06 13:10:01.484 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=1
+2021-04-06 13:10:32.528 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 8
+2021-04-06 13:10:33.930 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=0
+2021-04-06 13:11:06.882 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 7
+2021-04-06 13:11:13.426 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=0
+2021-04-06 13:11:48.163 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 13:11:57.676 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 13:11:59.472 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=1
+2021-04-06 13:12:34.326 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 13:12:39.988 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=1
+2021-04-06 13:18:21.570 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obamaa&wt=json} hits=0 status=0 QTime=9
+2021-04-06 13:19:17.380 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 13:19:23.194 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=10
+2021-04-06 13:19:23.270 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=11
+2021-04-06 13:19:57.656 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 13:19:59.242 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=1
+2021-04-06 13:21:56.270 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 7
+2021-04-06 13:21:57.922 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=0
+2021-04-06 13:24:25.926 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 10
+2021-04-06 13:24:28.329 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=2
+2021-04-06 13:25:06.472 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 13:25:07.890 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=1
+2021-04-06 13:25:44.500 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 13:30:29.396 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 13:30:36.038 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=2
+2021-04-06 13:31:20.412 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 7
+2021-04-06 13:31:22.940 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=1
+2021-04-06 13:31:22.964 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=10
+2021-04-06 13:33:32.588 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 13:33:47.391 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=1
+2021-04-06 13:33:47.409 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=8
+2021-04-06 13:34:13.974 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 13:34:40.384 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:hello&wt=json} hits=28 status=0 QTime=7
+2021-04-06 13:34:40.417 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=9
+2021-04-06 13:35:14.436 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 7
+2021-04-06 13:35:16.535 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:helloo&wt=json} hits=0 status=0 QTime=3
+2021-04-06 13:35:16.576 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=helloo&spellcheck=true} hits=0 status=0 QTime=21
+2021-04-06 13:39:04.006 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 13:39:15.150 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 13:40:12.863 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 7
+2021-04-06 13:42:51.520 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 13:42:53.512 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:helloo&wt=json} hits=0 status=0 QTime=1
+2021-04-06 13:43:09.986 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 13:43:11.217 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:helloo&wt=json} hits=0 status=0 QTime=1
+2021-04-06 13:43:11.249 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=helloo&spellcheck=true} hits=0 status=0 QTime=6
+2021-04-06 13:43:25.854 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:red&wt=json} hits=34 status=0 QTime=7
+2021-04-06 13:43:25.915 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=red&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-06 13:47:40.975 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 13:47:57.459 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 13:48:10.188 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 13:48:15.384 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:red&wt=json} hits=34 status=0 QTime=0
+2021-04-06 13:48:15.419 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=red&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-06 13:49:11.209 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 13:49:20.698 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 13:49:22.191 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:red&wt=json} hits=34 status=0 QTime=1
+2021-04-06 13:49:22.249 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=red&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-06 13:50:33.532 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 13:50:40.677 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:red&wt=json} hits=34 status=0 QTime=1
+2021-04-06 13:50:40.717 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=red&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-06 14:06:30.269 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 14:06:37.688 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 14:06:44.794 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:red&wt=json} hits=34 status=0 QTime=2
+2021-04-06 14:06:44.883 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=red&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 14:07:01.359 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=2
+2021-04-06 14:07:01.395 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=12
+2021-04-06 14:07:58.233 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 14:08:08.264 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:08:09.584 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:08:09.616 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=10
+2021-04-06 14:09:29.142 WARN  (qtp2134607032-18) [   x:final_core] o.a.s.s.SpellCheckCollator Exception trying to re-query to check if a spell check possibility would return any hits. => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '' queen[8:] '': Encountered " "]" "] "" at line 1, column 10.
+Was expecting:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '' queen[8:] '': Encountered " "]" "] "" at line 1, column 10.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:220) ~[?:?]
+	at org.apache.solr.spelling.SpellCheckCollator.collate(SpellCheckCollator.java:148) ~[?:?]
+	at org.apache.solr.handler.component.SpellCheckComponent.addCollationsToResponse(SpellCheckComponent.java:298) ~[?:?]
+	at org.apache.solr.handler.component.SpellCheckComponent.process(SpellCheckComponent.java:210) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:355) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '' queen[8:] '': Encountered " "]" "] "" at line 1, column 10.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 48 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 10.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 48 more
+2021-04-06 14:09:29.143 WARN  (qtp2134607032-18) [   x:final_core] o.a.s.s.SpellCheckCollator Exception trying to re-query to check if a spell check possibility would return any hits. => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '' quiere[8:] '': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '' quiere[8:] '': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:220) ~[?:?]
+	at org.apache.solr.spelling.SpellCheckCollator.collate(SpellCheckCollator.java:148) ~[?:?]
+	at org.apache.solr.handler.component.SpellCheckComponent.addCollationsToResponse(SpellCheckComponent.java:298) ~[?:?]
+	at org.apache.solr.handler.component.SpellCheckComponent.process(SpellCheckComponent.java:210) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:355) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '' quiere[8:] '': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 48 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 48 more
+2021-04-06 14:09:29.145 WARN  (qtp2134607032-18) [   x:final_core] o.a.s.s.SpellCheckCollator Exception trying to re-query to check if a spell check possibility would return any hits. => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '' quiero[8:] '': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '' quiero[8:] '': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:220) ~[?:?]
+	at org.apache.solr.spelling.SpellCheckCollator.collate(SpellCheckCollator.java:148) ~[?:?]
+	at org.apache.solr.handler.component.SpellCheckComponent.addCollationsToResponse(SpellCheckComponent.java:298) ~[?:?]
+	at org.apache.solr.handler.component.SpellCheckComponent.process(SpellCheckComponent.java:210) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:355) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '' quiero[8:] '': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 48 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 48 more
+2021-04-06 14:09:29.145 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q='+query[8:]+'&spellcheck=true} hits=0 status=0 QTime=17
+2021-04-06 14:10:20.066 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 7
+2021-04-06 14:10:21.982 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:10:22.037 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=15
+2021-04-06 14:11:11.016 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 14:11:12.692 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:11:12.724 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=10
+2021-04-06 14:11:40.021 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:11:41.383 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:11:41.414 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=9
+2021-04-06 14:13:23.985 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 8
+2021-04-06 14:13:25.379 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:13:25.410 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=8
+2021-04-06 14:17:53.299 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2021-04-06 14:18:03.770 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 1
+2021-04-06 14:18:12.594 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:18:12.609 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=4
+2021-04-06 14:19:17.943 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 4
+2021-04-06 14:19:19.304 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:19:19.327 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=4
+2021-04-06 14:19:58.825 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:20:00.846 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:20:00.862 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 14:23:21.837 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:23:23.544 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 1
+2021-04-06 14:23:26.997 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:23:27.010 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 14:23:40.856 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:23:40.873 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 14:24:41.368 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:27:17.293 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:27:18.996 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 1
+2021-04-06 14:27:19.786 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:27:19.801 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 14:27:44.594 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 1
+2021-04-06 14:28:53.878 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:28:53.895 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 14:29:37.769 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:29:38.678 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:29:38.695 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 14:30:21.387 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:30:30.579 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 1
+2021-04-06 14:30:35.371 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:30:35.390 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 14:32:25.272 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 14:32:37.003 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 1
+2021-04-06 14:32:48.955 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:33:02.101 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 13
+2021-04-06 14:34:05.848 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:34:05.911 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=17
+2021-04-06 14:34:47.470 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:34:47.508 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=8
+2021-04-06 14:36:21.730 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:36:21.800 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=16
+2021-04-06 14:37:14.296 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:37:14.328 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=7
+2021-04-06 14:37:51.241 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:37:51.276 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=7
+2021-04-06 14:37:54.151 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:37:54.217 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=14
+2021-04-06 14:38:17.359 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:38:17.392 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=8
+2021-04-06 14:38:49.156 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 11
+2021-04-06 14:39:13.478 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 2
+2021-04-06 14:39:15.287 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:39:15.328 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=9
+2021-04-06 14:40:12.260 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 7
+2021-04-06 14:40:14.324 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:40:14.357 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=9
+2021-04-06 14:41:07.195 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 5
+2021-04-06 14:41:11.529 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 1
+2021-04-06 14:41:18.676 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:41:18.727 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=14
+2021-04-06 14:41:55.672 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 14:41:57.361 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:41:57.392 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=9
+2021-04-06 14:42:01.083 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:42:01.139 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=11
+2021-04-06 14:42:36.983 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 8
+2021-04-06 14:43:00.623 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:redd&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:43:00.661 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=redd&spellcheck=true} hits=0 status=0 QTime=6
+2021-04-06 14:43:16.692 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&wt=json} hits=3288 status=0 QTime=1
+2021-04-06 14:43:16.743 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-06 14:45:04.273 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&wt=json} hits=3288 status=0 QTime=1
+2021-04-06 14:45:04.328 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-06 14:45:08.810 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumpp&wt=json} hits=0 status=0 QTime=2
+2021-04-06 14:45:08.885 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumpp&spellcheck=true} hits=0 status=0 QTime=24
+2021-04-06 14:48:56.466 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumpp&wt=json} hits=0 status=0 QTime=2
+2021-04-06 14:48:56.542 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumpp&spellcheck=true} hits=0 status=0 QTime=19
+2021-04-06 14:49:43.996 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 6
+2021-04-06 14:49:45.838 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumpp&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:49:45.874 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumpp&spellcheck=true} hits=0 status=0 QTime=13
+2021-04-06 14:50:07.697 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=1
+2021-04-06 14:50:07.779 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=13
+2021-04-06 14:50:14.003 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:biden&wt=json} hits=1770 status=0 QTime=8
+2021-04-06 14:50:14.091 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=biden&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-06 14:51:24.243 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:biden&wt=json} hits=1770 status=0 QTime=1
+2021-04-06 14:51:24.299 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=biden&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 14:51:28.775 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=0
+2021-04-06 14:51:28.817 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=7
+2021-04-06 14:53:10.548 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=1
+2021-04-06 14:53:10.633 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=14
+2021-04-06 14:53:29.967 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=1
+2021-04-06 14:53:30.053 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=15
+2021-04-06 14:53:37.354 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:red&wt=json} hits=34 status=0 QTime=1
+2021-04-06 14:53:37.418 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=red&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-06 14:53:40.458 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:indai&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:53:40.491 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=indai&spellcheck=true} hits=0 status=0 QTime=8
+2021-04-06 14:53:43.556 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:indai&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:53:43.581 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=indai&spellcheck=true} hits=0 status=0 QTime=5
+2021-04-06 14:53:45.638 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:sig&wt=json} hits=0 status=0 QTime=1
+2021-04-06 14:53:45.661 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=sig&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-06 14:53:50.255 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:singapore&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:53:50.279 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=singapore&spellcheck=true} hits=0 status=0 QTime=5
+2021-04-06 14:54:32.125 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:singapore&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:54:32.157 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=singapore&spellcheck=true} hits=0 status=0 QTime=8
+2021-04-06 14:54:36.275 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:chia&wt=json} hits=0 status=0 QTime=0
+2021-04-06 14:54:36.305 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=chia&spellcheck=true} hits=0 status=0 QTime=9
+2021-04-06 14:54:42.124 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=0
+2021-04-06 14:54:42.175 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=china&spellcheck=true} hits=0 status=0 QTime=7
+2021-04-06 14:55:06.201 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=0
+2021-04-06 14:55:06.247 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=china&spellcheck=true} hits=0 status=0 QTime=6
+2021-04-06 14:57:56.239 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=3
+2021-04-06 14:57:56.347 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=china&spellcheck=true} hits=0 status=0 QTime=14
+2021-04-06 14:58:23.315 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=0
+2021-04-06 14:58:23.357 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=china&spellcheck=true} hits=0 status=0 QTime=7
+2021-04-06 14:58:35.211 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=0
+2021-04-06 14:58:35.526 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=china&spellcheck=true} hits=0 status=0 QTime=12
+2021-04-06 14:58:47.472 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=0
+2021-04-06 14:58:47.518 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=china&spellcheck=true} hits=0 status=0 QTime=6
+2021-04-06 14:59:12.915 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=0
+2021-04-06 14:59:12.974 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=china&spellcheck=true} hits=0 status=0 QTime=5
+2021-04-06 14:59:30.052 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:china&wt=json} hits=93 status=0 QTime=0
+2021-04-06 14:59:30.108 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=china&spellcheck=true} hits=0 status=0 QTime=5
+2021-04-06 15:01:18.544 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&wt=json} hits=3288 status=0 QTime=1
+2021-04-06 15:01:18.557 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-06 15:01:23.474 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumpb&wt=json} hits=0 status=0 QTime=1
+2021-04-06 15:01:23.488 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumpb&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:01:30.457 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=1
+2021-04-06 15:01:30.474 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-06 15:01:38.065 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:eleexyiob&wt=json} hits=0 status=0 QTime=0
+2021-04-06 15:01:38.080 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=eleexyiob&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:01:43.793 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:election&wt=json} hits=457 status=0 QTime=0
+2021-04-06 15:01:43.808 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=election&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-06 15:01:47.101 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:electhion&wt=json} hits=0 status=0 QTime=0
+2021-04-06 15:01:47.114 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=electhion&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 15:01:55.553 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:blue&wt=json} hits=159 status=0 QTime=1
+2021-04-06 15:01:55.568 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=blue&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-06 15:02:00.798 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bluev&wt=json} hits=0 status=0 QTime=0
+2021-04-06 15:02:01.096 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bluev&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:03:12.359 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=0
+2021-04-06 15:03:12.378 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:03:56.548 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:obama&wt=json} hits=59 status=0 QTime=0
+2021-04-06 15:03:56.584 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=obama&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:05:27.993 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:harris&wt=json} hits=125 status=0 QTime=1
+2021-04-06 15:05:28.014 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=harris&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-06 15:05:58.531 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:saudi&wt=json} hits=5 status=0 QTime=1
+2021-04-06 15:05:58.567 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=saudi&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 15:09:31.369 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:canada&wt=json} hits=14 status=0 QTime=1
+2021-04-06 15:09:31.402 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=canada&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-06 15:17:02.870 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&wt=json} hits=1 status=0 QTime=0
+2021-04-06 15:17:02.893 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:17:12.435 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:indis&wt=json} hits=0 status=0 QTime=0
+2021-04-06 15:17:12.450 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=indis&spellcheck=true} hits=0 status=0 QTime=4
+2021-04-06 15:17:20.043 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumpss&wt=json} hits=0 status=0 QTime=0
+2021-04-06 15:17:20.055 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumpss&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:17:23.658 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumpsl&wt=json} hits=0 status=0 QTime=0
+2021-04-06 15:17:23.673 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumpsl&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:17:30.704 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:arab&wt=json} hits=8 status=0 QTime=0
+2021-04-06 15:17:30.739 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=arab&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:19:39.845 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:mexuco&wt=json} hits=0 status=0 QTime=5
+2021-04-06 15:19:39.858 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=mexuco&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:19:46.080 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:mexixo&wt=json} hits=0 status=0 QTime=1
+2021-04-06 15:19:46.093 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=mexixo&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-06 15:19:49.635 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:mexico&wt=json} hits=46 status=0 QTime=1
+2021-04-06 15:19:49.664 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=mexico&spellcheck=true} hits=0 status=0 QTime=4
+2021-04-06 15:22:43.436 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:mexico&wt=json} hits=46 status=0 QTime=0
+2021-04-06 15:22:43.453 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=mexico&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:22:52.534 INFO  (qtp2134607032-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:korea&wt=json} hits=16 status=0 QTime=1
+2021-04-06 15:22:52.558 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=korea&spellcheck=true} hits=0 status=0 QTime=2
+2021-04-06 15:23:03.531 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:korean&wt=json} hits=4 status=0 QTime=1
+2021-04-06 15:23:03.819 INFO  (qtp2134607032-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=korean&spellcheck=true} hits=0 status=0 QTime=2
