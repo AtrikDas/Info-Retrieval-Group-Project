@@ -23,15 +23,16 @@ def search():
 @application.route("/searchResults")
 def search_results():
     search_query = request.args.get("search")
+    ranking = request.args.get("rank")
+    countries = [request.args.get(f"country{i}") for i in range(1, 11) if request.args.get(f"country{i}") != None]
     if search_query:
-        text = "content:" + search_query
-        tweets, suggestions = filter(text)
-        
+        tweets, suggestions = filter(search_query, ranking, countries)
+        countries = "&".join([f"country{i}="+request.args.get(f"country{i}") for i in range(1, 11) if request.args.get(f"country{i}") != None])
         if len(suggestions) == 0:
             suggestions = []
         if len(tweets) == 0:
-            return render_template('pages/search.html', search_query = search_query, error = "No tweets Found", tweets = None, suggestions=suggestions)
-        return render_template('pages/search.html', search_query = search_query, error= None, tweets = tweets, suggestions=suggestions)
+            return render_template('pages/search.html', search_query = search_query, error = "No tweets Found", tweets = None, suggestions=suggestions, countries=countries)
+        return render_template('pages/search.html', search_query = search_query, error= None, tweets = tweets, suggestions=suggestions, countries=countries)
 
     return render_template('pages/search.html')
 

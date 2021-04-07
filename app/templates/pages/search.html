@@ -37,7 +37,7 @@
 												id="rank"
 												aria-label="Default select example"
 											>
-												<option value="Most Relevant">Rank Mode...</option>
+												<option value="">Rank Mode...</option>
 												<option value="Most Relevant">Most Relevant</option>
 												<option value="Date">Date</option>
 												<option value="Likes">Likes</option>
@@ -54,136 +54,140 @@
 										</fieldset>
 									</div>
 								</div>
-							</form>
-
-							<div class="row">
-								<div class="col-md-12" style="text-align: center">
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country1"
-												name="country1"
-												value=""
-											/>Brazil</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country2"
-												name="country2"
-												value=""
-											/>Mexico</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country3"
-												name="countr3"
-												value=""
-											/>India</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country4"
-												name="country4"
-												value=""
-											/>Canada</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country5"
-												name="country5"
-												value=""
-											/>UK</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country6"
-												name="country6"
-												value=""
-											/>South Korea</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country7"
-												name="country7"
-												value=""
-											/>Iran</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country8"
-												name="country8"
-												value=""
-											/>Israel</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country9"
-												name="country9"
-												value=""
-											/>Russia</label
-										>
-									</div>
-									<div class="checkbox form-check-inline">
-										<label
-											><input
-												type="checkbox"
-												id="country10"
-												name="country10"
-												value=""
-											/>Ukraine</label
-										>
+								<br />
+								<div class="row">
+									<div class="col-md-12" style="text-align: center">
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country1"
+													name="country1"
+													value="Brazil"
+													checked
+												/>Brazil</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country2"
+													name="country2"
+													value="Mexico"
+													checked
+												/>Mexico</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country3"
+													name="country3"
+													value="India"
+													checked
+												/>India</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country4"
+													name="country4"
+													value="Canada"
+													checked
+												/>Canada</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country5"
+													name="country5"
+													value="UK"
+													checked
+												/>UK</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country6"
+													name="country6"
+													value="South Korea"
+													checked
+												/>South Korea</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country7"
+													name="country7"
+													value="Iran"
+													checked
+												/>Iran</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country8"
+													name="country8"
+													value="Israel"
+													checked
+												/>Israel</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country9"
+													name="country9"
+													value="Russia"
+													checked
+												/>Russia</label
+											>
+										</div>
+										<div class="checkbox form-check-inline">
+											<label
+												><input
+													type="checkbox"
+													id="country10"
+													name="country10"
+													value="Ukraine"
+													checked
+												/>Ukraine</label
+											>
+										</div>
 									</div>
 								</div>
-							</div>
+								<div
+									class="blue-button"
+									id="form-submit"
+									name="search"
+									action="/searchResults"
+									method="get"
+								>
+									{% if suggestions %} Did you mean
+									<a
+										href="/searchResults?search={{suggestions[0].word}}&{{countries}}"
+									>
+										{{suggestions[0].word}}</a
+									>? { {% endif %}
+								</div>
+							</form>
 						</div>
 					</div>
 
 					<br />
-
-					<div
-						class="blue-button"
-						id="form-submit"
-						name="search"
-						action="/searchResults"
-						method="get"
-					>
-						{% if suggestions %} {% for suggestion in suggestions %}
-
-						<a name="search" type="submit" class="btn" id="search"
-							>{{suggestion.word}}</a
-						>
-
-						{% endfor %} {% else %}
-
-						<div>{{error}}</div>
-
-						{% endif %}
-					</div>
 				</div>
 			</div>
 		</div>
@@ -196,21 +200,18 @@
 			<div class="col-md-12">
 				<div class="section-heading">
 					<span>Search Results for query</span>
-					<h2>xxx xxx</h2>
 				</div>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-md-4 col-md-6 col-md-8 col-xs-12">
+		<div class="row center">
+			<div class="col-md-12">
 				<div class="featured-item">
 					{% if tweets %} {% for tweet in tweets %}
-
 					<div class="down-content">
 						<h4>{{tweet.username[0]}}</h4>
-						<span>{{tweet.username[0]}}</span>
-						<p>{{tweet.content[0]}}</p>
 						<span>{{tweet.date[0]}}</span>
+						<p>{{tweet.content[0]}}</p>
 						<div class="row">
 							<div class="col-md-6 first-button">
 								<div class="text-button">

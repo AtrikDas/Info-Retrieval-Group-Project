@@ -1,12 +1,21 @@
 from tweet_manager import TweetManager
 import plotly.express as px
 
-def filter(search_query):
-    ranked_tweets = TweetManager.extract_tweets(search_query)
+def filter(search_query, ranking= None, countries = []):
+    countries = "(" +" OR ".join(countries) + ")"
+    tweets = TweetManager.extract_tweets(search_query, countries)
     spellcheck_suggestions = TweetManager.spell_check(search_query)
-    #print(ranked_tweets)
-    # ranked_tweets = ["dONALD DUCK"]
-    return ranked_tweets, spellcheck_suggestions
+
+    if ranking == "Most Relevant":
+        tweets = TweetManager.rank_by_most_relevant_tweets(search_query, tweets)
+    elif ranking == "Date":
+        tweets = TweetManager.rank_by_date_tweets(tweets)
+    elif ranking == "Likes":
+        tweets = TweetManager.rank_by_likes_tweets(tweets)
+    elif ranking == "Retweets":
+        tweets = TweetManager.rank_by_retweets_tweets(tweets)
+
+    return tweets[:15] if len(tweets) > 15 else tweets, spellcheck_suggestions
 
 
 def geospatial_graph():

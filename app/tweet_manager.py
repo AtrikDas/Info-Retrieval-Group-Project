@@ -13,11 +13,19 @@ class TweetManager:
     solr = pysolr.Solr('http://localhost:7364/solr/final_core', always_commit=True)
     solr.optimize()
     
+    @staticmethod
+    def extract_tweets(query, countries = []):
+        tweets = TweetManager.get_tweets_by_exact_match(query, countries)     
+        if len(tweets) == 0:
+            return []
+        for tweet in tweets:
+            tweet['date'][0] = datetime.datetime.strptime(tweet['date'][0], "%Y-%m-%dT%H:%M:%SZ")
+        return tweets
 
     @staticmethod
-    def get_tweets_by_exact_match(query):
+    def get_tweets_by_exact_match(query, countries = []):
         try:
-            response = TweetManager.solr.search(query)
+            response = TweetManager.solr.search(f"content:{query}", fq=f"country:{countries}")
         except:
             logging.error("Error in getting tweets by exact match")
             return []
@@ -27,12 +35,7 @@ class TweetManager:
     @staticmethod
     def spell_check(query):
         try:
-
-            #http://localhost:8983/solr/final_core/spell?spellcheck.q={query}&spellcheck=true
-
-            url = 'http://localhost:7364/solr/final_core/spell?spellcheck.q='+query[8:]+'&spellcheck=true'
-            #print("spell check query :" + query[8:])
-            #print(url)
+            url = 'http://localhost:7364/solr/final_core/spell?spellcheck.q='+query+'&spellcheck=true'
             response = requests.get(url)
             suggestions = response.json() 
             suggestions = suggestions["spellcheck"]["suggestions"][1]["suggestion"]
@@ -42,22 +45,9 @@ class TweetManager:
             return []
 
         return suggestions
-        
-    
-    @staticmethod
-    def get_tweets_by_similarity(query):
-        try:
-            response = TweetManager.solr.more_like_this(q = query, mltfl='text')
-        except:
-            logging.error("Error in getting tweets by similarity")
-            return []
-
-        tweets = list(map(lambda x: x, response))
-        return tweets
-        
 
     @staticmethod
-    def rank_tweets(query, tweets):
+    def rank_by_most_relevant_tweets(query, tweets):
         tweet_content = [tweet['content'][0] for tweet in tweets]
         vectorizer = TfidfVectorizer()
         content = tweet_content.copy()
@@ -79,23 +69,19 @@ class TweetManager:
         for score in all_scores:
             tweet = tweets[int(score[0])]
             ranked_tweets.append(tweet)
-        return tweets
-    
-    @staticmethod
-    def extract_tweets(query):
-
-        tweets = TweetManager.get_tweets_by_exact_match(query)     
-        yourdate = datetime.datetime.strptime(tweets[0]['date'][0], "%Y-%m-%dT%H:%M:%SZ")
-        print("Date :", yourdate)
-        print("Date Type :", type(yourdate))
-
-        for tweet in tweets:
-            tweet['date'][0] = datetime.datetime.strptime(tweet['date'][0], "%Y-%m-%dT%H:%M:%SZ")
-
-        if len(tweets) != 10:
-            similar_tweets = TweetManager.get_tweets_by_similarity(query)
-            tweets = tweets + similar_tweets[:10-len(similar_tweets)]
-        if len(tweets) == 0:
-            return []
-        ranked_tweets = TweetManager.rank_tweets(query, tweets)
         return ranked_tweets
+    
+    def rank_by_date_tweets(tweets):
+        return sorted(tweets, key= lambda x: x['date'][0], reverse=True)
+        
+    def rank_by_likes_tweets(tweets):
+        try:
+            return sorted(tweets, key= lambda x: x['likeCount'][0], reverse=True)
+        except:
+            return tweets
+
+    def rank_by_retweets_tweets(tweets):
+        try:
+            return sorted(tweets, key= lambda x: x['retweetCount'][0], reverse=True)
+        except:
+            return tweets
