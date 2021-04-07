@@ -1,0 +1,238 @@
+{% extends 'layout.html' %} {% block body %}
+<div class="welcome-area" id="welcome">
+	<div class="header-text">
+		<div class="container">
+			<div class="row">
+				<div
+					class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12"
+				>
+					<h1><strong>SEARCHIFY</strong></h1>
+				</div>
+				<div class="banner">
+					<div class="col-md-12">
+						<div class="submit-form">
+							<form
+								id="form-submit"
+								name="search"
+								action="/searchResults"
+								method="get"
+							>
+								<div class="row">
+									<div class="col-md-6 first-item">
+										<fieldset>
+											<input
+												name="search"
+												type="text"
+												class="form-control"
+												id="search"
+												placeholder="Search Tweet..."
+												required=""
+											/>
+										</fieldset>
+									</div>
+									<div class="col-md-3 second-item">
+										<fieldset for="rank">
+											<select
+												name="rank"
+												id="rank"
+												aria-label="Default select example"
+											>
+												<option value="Most Relevant">Rank Mode...</option>
+												<option value="Most Relevant">Most Relevant</option>
+												<option value="Date">Date</option>
+												<option value="Likes">Likes</option>
+												<option value="Retweets">Retweets</option>
+											</select>
+										</fieldset>
+									</div>
+									<div class="col-md-3">
+										<fieldset>
+											<button type="submit" id="search" class="btn">
+												<i class="material-icons">search</i>
+												Searchify Now
+											</button>
+										</fieldset>
+									</div>
+								</div>
+							</form>
+
+							<div class="row">
+								<div class="col-md-12" style="text-align: center">
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country1"
+												name="country1"
+												value=""
+											/>Brazil</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country2"
+												name="country2"
+												value=""
+											/>Mexico</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country3"
+												name="countr3"
+												value=""
+											/>India</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country4"
+												name="country4"
+												value=""
+											/>Canada</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country5"
+												name="country5"
+												value=""
+											/>UK</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country6"
+												name="country6"
+												value=""
+											/>South Korea</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country7"
+												name="country7"
+												value=""
+											/>Iran</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country8"
+												name="country8"
+												value=""
+											/>Israel</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country9"
+												name="country9"
+												value=""
+											/>Russia</label
+										>
+									</div>
+									<div class="checkbox form-check-inline">
+										<label
+											><input
+												type="checkbox"
+												id="country10"
+												name="country10"
+												value=""
+											/>Ukraine</label
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<br />
+
+					<div
+						class="blue-button"
+						id="form-submit"
+						name="search"
+						action="/searchResults"
+						method="get"
+					>
+						{% if suggestions %} {% for suggestion in suggestions %}
+
+						<a name="search" type="submit" class="btn" id="search"
+							>{{suggestion.word}}</a
+						>
+
+						{% endfor %} {% else %}
+
+						<div>{{error}}</div>
+
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ***** Header Text End ***** -->
+</div>
+<section class="featured-places" id="search_results">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-heading">
+					<span>Search Results for query</span>
+					<h2>xxx xxx</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 col-md-6 col-md-8 col-xs-12">
+				<div class="featured-item">
+					{% if tweets %} {% for tweet in tweets %}
+
+					<div class="down-content">
+						<h4>{{tweet.username[0]}}</h4>
+						<span>{{tweet.username[0]}}</span>
+						<p>{{tweet.content[0]}}</p>
+						<span>{{tweet.date[0]}}</span>
+						<div class="row">
+							<div class="col-md-6 first-button">
+								<div class="text-button">
+									<a href="#"><i class="material-icons">favorite</i>Likes</a>
+								</div>
+							</div>
+							<div class="col-md-6 second-button">
+								<div class="text-button">
+									<a href="#"><i class="material-icons">repeat</i>Retweet</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br />
+					{% endfor %} {% else %}
+					<div>{{error}}</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ***** Search Result Area End ***** -->
+{% endblock %}

@@ -10,7 +10,7 @@ import datetime
 
 
 class TweetManager:
-    solr = pysolr.Solr('http://localhost:8983/solr/final_core', always_commit=True)
+    solr = pysolr.Solr('http://localhost:7364/solr/final_core', always_commit=True)
     solr.optimize()
     
 
@@ -30,7 +30,7 @@ class TweetManager:
 
             #http://localhost:8983/solr/final_core/spell?spellcheck.q={query}&spellcheck=true
 
-            url = 'http://localhost:8983/solr/final_core/spell?spellcheck.q='+query[8:]+'&spellcheck=true'
+            url = 'http://localhost:7364/solr/final_core/spell?spellcheck.q='+query[8:]+'&spellcheck=true'
             #print("spell check query :" + query[8:])
             #print(url)
             response = requests.get(url)

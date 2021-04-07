@@ -2,3 +2,4 @@ flask
 pysolr
 plotly
 pandas
+scikit-learn

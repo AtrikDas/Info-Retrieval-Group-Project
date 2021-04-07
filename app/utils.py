@@ -1,7 +1,5 @@
 from tweet_manager import TweetManager
 import plotly.express as px
-import dash_core_components as dcc
-import dash_html_components as html
 
 def filter(search_query):
     ranked_tweets = TweetManager.extract_tweets(search_query)
@@ -19,7 +17,7 @@ def geospatial_graph():
                     color_continuous_scale=px.colors.sequential.Plasma)
     # fig.show()
     # fig.write_html("1.html")
-    return html.Div([dcc.Graph(figure=fig)])
+    # return html.Div([dcc.Graph(figure=fig)])
 
 
 if __name__ == "__main__":
