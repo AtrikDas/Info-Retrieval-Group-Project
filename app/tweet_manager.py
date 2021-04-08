@@ -8,7 +8,7 @@ import datetime
 
 
 class TweetManager:
-    solr = pysolr.Solr('http://localhost:7364/solr/final_core', always_commit=True)
+    solr = pysolr.Solr('http://localhost:8983/solr/final_core', always_commit=True)
     solr.optimize()
     
     @staticmethod
@@ -23,11 +23,14 @@ class TweetManager:
     @staticmethod
     def get_tweets_by_exact_match(query, countries = []):
         try:
-            response = TweetManager.solr.search(f"content:{query}", fq=f"country:{countries}")
+            response = TweetManager.solr.search(f"content:{query}", fq=f"country:{countries}", rows=20)
+            print("XXXXX THIS IS THE RESPONSE XXXXXX")
+            print(response)
         except:
             logging.error("Error in getting tweets by exact match")
             return []
         tweets = list(map(lambda x: x, response))
+        print(tweets)
         return tweets
 
     @staticmethod

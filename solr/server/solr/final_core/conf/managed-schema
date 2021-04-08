@@ -467,8 +467,8 @@
   <field name="sentiment" type="text_general"/>
   <field name="url" type="text_general"/>
   <field name="username" type="text_general"/>
-  <field name="weightedSentiment" type="plongs"/>
-  <field name="weightedSentimentNorm" type="plongs"/>
+  <field name="weightedSentiment" type="pfloats"/>
+  <field name="weightedSentimentNorm" type="pfloats"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
   <dynamicField name="*_descendent_path" type="descendent_path" indexed="true" stored="true"/>
   <dynamicField name="*_ancestor_path" type="ancestor_path" indexed="true" stored="true"/>
