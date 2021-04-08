@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, send_file, send_from_directory
 import os
-from utils import filter
+from utils import filter, geospatial_graph
 import os
 
 BASE_DIR = os.getcwd()
@@ -38,7 +38,8 @@ def search_results():
 
 
 @application.route("/map")
-def geospatial_search2():
+def geospatial_search():
+    geospatial_graph()
     return render_template("pages/map.html")
 
 

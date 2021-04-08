@@ -4,8 +4,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 import pandas as pd
 import requests
-import json
-import dateutil.parser
 import datetime
 
 
