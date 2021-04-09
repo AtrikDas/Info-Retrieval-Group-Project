@@ -39,7 +39,7 @@ def search_results():
 
 @application.route("/map")
 def geospatial_search():
-    return render_template("pages/map.html", plot = geospatial_graph())
+    return render_template("pages/map.html")
 
 
 @application.route("/plotly/<filename>")
