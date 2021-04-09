@@ -1,1 +1,40 @@
-{% extends 'layout.html' %} {% block body %} {% endblock %}
+{% extends 'layout.html' %} {% block body %}
+<div class="welcome-area" id="welcome">
+	<div class="header-text">
+		<div class="container">
+			<div class="row">
+				<div
+					class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12"
+				>
+					<h1><strong>SEARCHIFY</strong></h1>
+					<p>
+						Find out about Twitter US Presedential Elections tweets and their
+						analysis
+					</p>
+					<a href="#map" class="main-button-slider">View Map</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="map">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+	<script type="text/javascript">
+		window.PlotlyConfig = { MathJaxConfig: 'local' };
+	</script>
+	<script
+		type="text/javascript"
+		src="http://127.0.0.1:8000//plotly/1.min.js"
+	></script>
+	<div
+		id="1ee924eb-a3be-4ffd-afe7-a6e9bfce2b23"
+		class="plotly-graph-div"
+		style="height: 100%; width: 100%"
+	></div>
+	<script
+		type="text/javascript"
+		src="http://127.0.0.1:8000//plotly/2.min.js"
+	></script>
+</div>
+{% endblock %}

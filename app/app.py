@@ -39,15 +39,13 @@ def search_results():
 
 @application.route("/map")
 def geospatial_search():
-    geospatial_graph()
-    return render_template("pages/map.html")
+    return render_template("pages/map.html", plot = geospatial_graph())
 
 
-# @application.route("/plotly/<filename>")
-# def plotly(filename):
-#     return send_from_directory(f"{BASE_DIR}/js/", filename=filename)
+@application.route("/plotly/<filename>")
+def plotly(filename):
+    return send_from_directory(f"{BASE_DIR}/static/js", filename=filename)
 
 
 if __name__ == "__main__":
-    print(BASE_DIR)
     application.run(debug=True, port=PORT)
