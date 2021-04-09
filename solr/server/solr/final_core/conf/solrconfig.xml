@@ -897,14 +897,9 @@
 
        http://wiki.apache.org/solr/SpellCheckComponent
     -->
+
   <searchComponent name="spellcheck" class="solr.SpellCheckComponent">
-
     <str name="queryAnalyzerFieldType">text_general</str>
-
-    <!-- Multiple "Spell Checkers" can be declared and used by this
-         component
-      -->
-
     <!-- a spellchecker built from a field of the main index -->
     <lst name="spellchecker">
       <str name="name">default</str>
@@ -924,10 +919,8 @@
       <int name="minQueryLength">4</int>
       <!-- maximum threshold of documents a query term can appear to be considered for correction -->
       <float name="maxQueryFrequency">0.01</float>
-      <!-- uncomment this to require suggestions to occur in 1% of the documents
-        <float name="thresholdTokenFrequency">.01</float>
-      -->
     </lst>
+ </searchComponent>
 
     <!-- a spellchecker that can break or combine words.  See "/spell" handler below for usage -->
     <!--
@@ -940,7 +933,7 @@
       <int name="maxChanges">10</int>
     </lst>
     -->
-  </searchComponent>
+  
 
   <!-- A request handler for demonstrating the spellcheck component.
 

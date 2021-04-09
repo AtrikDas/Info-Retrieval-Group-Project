@@ -8,7 +8,7 @@ import datetime
 
 
 class TweetManager:
-    solr = pysolr.Solr('http://localhost:7364/solr/final_core', always_commit=True)
+    solr = pysolr.Solr('http://localhost:8983/solr/final_core', always_commit=True)
     # solr.optimize()
     
     @staticmethod
@@ -33,7 +33,7 @@ class TweetManager:
     @staticmethod
     def spell_check(query):
         try:
-            url = 'http://localhost:7364/solr/final_core/spell?spellcheck.q='+query+'&spellcheck=true'
+            url = 'http://localhost:8983/solr/final_core/spell?spellcheck.q='+query+'&spellcheck=true'
             response = requests.get(url)
             suggestions = response.json() 
             suggestions = suggestions["spellcheck"]["suggestions"][1]["suggestion"]

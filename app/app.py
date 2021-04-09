@@ -28,6 +28,8 @@ def search_results():
     if search_query:
         tweets, suggestions = filter(search_query, ranking, countries)
         countries = "&".join([f"country{i}="+request.args.get(f"country{i}") for i in range(1, 11) if request.args.get(f"country{i}") != None])
+        print("HERE IS THE TWEET")
+        print(tweets[0])
         if len(suggestions) == 0:
             suggestions = []
         if len(tweets) == 0:

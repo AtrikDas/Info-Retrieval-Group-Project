@@ -567,8 +567,6 @@ section.featured-places {
 .featured-places .featured-item .thumb .date-content h6 {
 	font-size: 24px;
 	font-weight: 700;
-	margin-top: 18px;
-	margin-bottom: 5px;
 	letter-spacing: 0.5px;
 }
 
@@ -576,7 +574,40 @@ section.featured-places {
 	font-size: 12px;
 	font-weight: 300;
 	text-transform: uppercase;
-	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	letter-spacing: 0.5px;
+}
+
+
+.featured-places .featured-item .thumb .date-content1 {
+	position: absolute;
+	z-index: 9;
+	top: 30px;
+	right: 30px;
+	color: #fff;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #bd0c12;
+	border-radius: 50%;
+}
+
+.featured-places .featured-item .thumb .date-content1 h6 {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+
+.featured-places .featured-item .thumb .date-content1 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	letter-spacing: 0.5px;
 }
 
@@ -588,6 +619,9 @@ section.featured-places {
 	border-bottom-right-radius: 5px;
 }
 
+
+
+
 .featured-places .featured-item .down-content h4 {
 	margin-top: 0px;
 	font-size: 19px;
@@ -598,6 +632,13 @@ section.featured-places {
 
 .featured-places .featured-item .down-content span {
 	display: block;
+	font-size: 15px;
+	color: #4883ff;
+	margin-bottom: 15px;
+}
+
+.featured-places .featured-item .down-content a {
+	display: block;
 	font-size: 13px;
 	color: #4883ff;
 	margin-bottom: 15px;
@@ -605,6 +646,7 @@ section.featured-places {
 
 .featured-places .featured-item .down-content p {
 	margin-bottom: 20px;
+	font-size: 15px;
 }
 
 .featured-places .featured-item .down-content .col-md-6 {
@@ -637,6 +679,8 @@ section.featured-places {
 .featured-places .featured-item .down-content .text-button a:hover {
 	color: #4883ff;
 }
+
+
 
 /* 
 ---------------------------------------------
