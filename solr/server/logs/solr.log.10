@@ -1,59 +1,59 @@
-2021-04-10 06:59:41.777 INFO  (main) [   ] o.e.j.u.log Logging initialized @4905ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-04-10 06:59:42.182 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_282-b08
-2021-04-10 06:59:42.231 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/contexts/] at interval 0
-2021-04-10 06:59:44.517 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-04-10 06:59:44.538 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-04-10 06:59:44.538 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-04-10 06:59:44.549 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2021-04-10 06:59:44.719 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-04-10 06:59:44.732 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.0
-2021-04-10 06:59:44.733 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-04-10 06:59:44.733 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr
-2021-04-10 06:59:44.734 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-04-10T06:59:44.734Z
-2021-04-10 06:59:44.752 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr
-2021-04-10 06:59:44.760 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\solr.xml
-2021-04-10 06:59:44.977 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701, but no JMX reporters were configured - adding default JMX reporter.
-2021-04-10 06:59:46.317 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2021-04-10 06:59:46.683 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6bb75258[provider=null,keyStore=null,trustStore=null]
-2021-04-10 06:59:46.683 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6bb75258[provider=null,keyStore=null,trustStore=null]
-2021-04-10 06:59:47.046 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5df417a7[provider=null,keyStore=null,trustStore=null]
-2021-04-10 06:59:47.046 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5df417a7[provider=null,keyStore=null,trustStore=null]
-2021-04-10 06:59:47.173 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2021-04-10 06:59:47.501 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2021-04-10 06:59:47.501 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2021-04-10 06:59:47.665 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
-2021-04-10 06:59:47.669 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
-2021-04-10 06:59:47.688 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
-2021-04-10 06:59:47.786 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr
-2021-04-10 06:59:47.787 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [final_core]
-2021-04-10 06:59:47.876 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.0
-2021-04-10 06:59:48.251 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Schema name=default-config
-2021-04-10 06:59:49.031 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2021-04-10 06:59:49.031 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2021-04-10 06:59:49.031 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2021-04-10 06:59:49.031 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2021-04-10 06:59:49.031 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2021-04-10 06:59:49.045 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2021-04-10 06:59:49.045 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2021-04-10 06:59:49.045 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2021-04-10 06:59:49.045 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2021-04-10 06:59:49.045 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2021-04-10 06:59:49.132 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@3012646b{/solr,file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server/solr-webapp/webapp}
-2021-04-10 06:59:49.160 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2beee7ff{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-04-10 06:59:49.160 INFO  (main) [   ] o.e.j.s.Server Started @12292ms
-2021-04-10 06:59:49.523 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-04-10 06:59:49.650 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.CoreContainer Creating SolrCore 'final_core' using configuration from instancedir C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core, trusted=true
-2021-04-10 06:59:49.723 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.final_core' (registry 'solr.core.final_core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
-2021-04-10 06:59:49.768 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrCore [[final_core] ] Opening new SolrCore at [C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core], dataDir=[C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core\data\]
-2021-04-10 06:59:51.228 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-04-10 06:59:51.228 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-04-10 06:59:51.272 INFO  (qtp2134607032-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=86
-2021-04-10 06:59:51.292 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-04-10 06:59:51.292 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-04-10 06:59:51.868 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core\conf
-2021-04-10 06:59:51.936 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-04-10 06:59:51.960 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-04-10 06:59:51.992 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-04-10 06:59:52.041 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-04-10 06:59:52.041 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-04-10 06:59:52.093 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.SolrCore [final_core]  Registered new searcher autowarm time: 0 ms
+2021-04-10 07:13:42.571 INFO  (main) [   ] o.e.j.u.log Logging initialized @4040ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-04-10 07:13:42.956 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_282-b08
+2021-04-10 07:13:43.008 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/contexts/] at interval 0
+2021-04-10 07:13:45.311 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-04-10 07:13:45.334 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-04-10 07:13:45.334 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-04-10 07:13:45.346 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-04-10 07:13:45.498 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-04-10 07:13:45.507 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.0
+2021-04-10 07:13:45.516 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-04-10 07:13:45.516 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr
+2021-04-10 07:13:45.516 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-04-10T07:13:45.516Z
+2021-04-10 07:13:45.536 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr
+2021-04-10 07:13:45.536 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\solr.xml
+2021-04-10 07:13:45.763 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701, but no JMX reporters were configured - adding default JMX reporter.
+2021-04-10 07:13:47.178 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-04-10 07:13:47.513 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6bb75258[provider=null,keyStore=null,trustStore=null]
+2021-04-10 07:13:47.519 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6bb75258[provider=null,keyStore=null,trustStore=null]
+2021-04-10 07:13:47.886 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5df417a7[provider=null,keyStore=null,trustStore=null]
+2021-04-10 07:13:47.886 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5df417a7[provider=null,keyStore=null,trustStore=null]
+2021-04-10 07:13:48.005 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-04-10 07:13:48.385 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-04-10 07:13:48.387 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-04-10 07:13:48.565 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-04-10 07:13:48.566 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-04-10 07:13:48.577 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-04-10 07:13:48.678 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr
+2021-04-10 07:13:48.678 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [final_core]
+2021-04-10 07:13:48.767 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.0
+2021-04-10 07:13:49.121 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-10 07:13:49.930 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-10 07:13:49.930 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-10 07:13:49.930 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-10 07:13:49.930 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-10 07:13:49.930 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-10 07:13:49.945 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-10 07:13:49.946 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-10 07:13:49.946 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-10 07:13:49.946 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-10 07:13:49.946 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-10 07:13:50.095 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@3012646b{/solr,file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server/solr-webapp/webapp}
+2021-04-10 07:13:50.122 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2beee7ff{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-04-10 07:13:50.123 INFO  (main) [   ] o.e.j.s.Server Started @11593ms
+2021-04-10 07:13:50.376 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-10 07:13:50.497 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.CoreContainer Creating SolrCore 'final_core' using configuration from instancedir C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core, trusted=true
+2021-04-10 07:13:50.577 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.final_core' (registry 'solr.core.final_core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-04-10 07:13:50.601 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrCore [[final_core] ] Opening new SolrCore at [C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core], dataDir=[C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core\data\]
+2021-04-10 07:13:51.929 INFO  (qtp2134607032-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=85
+2021-04-10 07:13:52.087 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-04-10 07:13:52.087 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-04-10 07:13:52.212 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-10 07:13:52.213 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-10 07:13:52.790 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core\conf
+2021-04-10 07:13:52.887 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-10 07:13:52.919 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-10 07:13:52.965 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-10 07:13:53.028 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-10 07:13:53.028 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-10 07:13:53.049 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.SolrCore [final_core]  Registered new searcher autowarm time: 0 ms
