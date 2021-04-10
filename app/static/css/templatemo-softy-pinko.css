@@ -619,7 +619,15 @@ section.featured-places {
 	border-bottom-right-radius: 5px;
 }
 
+.featured-places .featured-item .down-content .row h3 {
+	color: #fff;
+	margin-bottom: 20px;
+}
 
+.featured-places .featured-item .down-content h3 {
+	color: #fff;
+	margin-bottom: 20px;
+}
 
 
 .featured-places .featured-item .down-content h4 {
@@ -1050,6 +1058,113 @@ welcome
 		color: #fff;
 	}
 	.welcome-area .header-text p {
+		text-align: center;
+		color: #fff;
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 40px;
+	}
+}
+
+
+.welcome-area-s {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../images/banner-bg1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.welcome-area-s .header-text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-55%);
+	text-align: center;
+	width: 100%;
+}
+
+.welcome-area-s .header-text h1 {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 54px;
+	letter-spacing: 1.4px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+.welcome-area-s .header-text p {
+	font-weight: 400;
+	font-size: 15px;
+	color: #fff;
+	line-height: 28px;
+	letter-spacing: 0.25px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+@media (max-width: 991px) {
+	.welcome-area-s .header-text {
+		top: 65% !important;
+		transform: perspective(1px) translateY(-60%) !important;
+		text-align: center;
+	}
+	.welcome-area-s .header-text h1 {
+		text-align: center;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+	.welcome-area-s .header-text h1 span {
+		color: #fff;
+	}
+	.welcome-area-s .header-text p {
+		text-align: center;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 820px) {
+	.welcome-area-s .header-text {
+		top: 65% !important;
+		transform: perspective(1px) translateY(-60%) !important;
+	}
+	.welcome-area-s .header-text h1 {
+		font-size: 22px;
+		line-height: 30px;
+		margin-bottom: 15px;
+	}
+	.welcome-area-s .header-text p {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 765px) {
+	.welcome-area-s {
+		margin-bottom: 100px;
+	}
+	.welcome-area-s .header-text {
+		top: 50% !important;
+		transform: perspective(1px) translateY(-50%) !important;
+		text-align: center;
+	}
+	.welcome-area-s .header-text .buttons {
+		display: none;
+	}
+	.welcome-area-s .header-text h1 {
+		font-weight: 600;
+		font-size: 24px !important;
+		line-height: 30px !important;
+		margin-bottom: 30px !important;
+	}
+	.welcome-area-s .header-text h1 span {
+		color: #fff;
+	}
+	.welcome-area-s .header-text p {
 		text-align: center;
 		color: #fff;
 		font-size: 14px;

@@ -1,12 +1,12 @@
-2021-04-09 12:14:06.246 INFO  (main) [   ] o.e.j.u.log Logging initialized @5375ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-04-09 12:14:06.918 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_282-b08
-2021-04-09 12:14:07.015 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/contexts/] at interval 0
-2021-04-09 12:14:10.126 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-04-09 12:14:10.165 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-04-09 12:14:10.165 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-04-09 12:14:10.181 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2021-04-09 12:14:10.422 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-04-09 12:14:10.441 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.0
-2021-04-09 12:14:10.441 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-04-09 12:14:10.441 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr
-2021-04-09 12:14:10.445 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-04-09T12:14:10.445Z
+2021-04-10 06:59:41.777 INFO  (main) [   ] o.e.j.u.log Logging initialized @4905ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-04-10 06:59:42.182 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_282-b08
+2021-04-10 06:59:42.231 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/contexts/] at interval 0
+2021-04-10 06:59:44.517 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-04-10 06:59:44.538 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-04-10 06:59:44.538 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-04-10 06:59:44.549 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-04-10 06:59:44.719 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-04-10 06:59:44.732 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.0
+2021-04-10 06:59:44.733 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-04-10 06:59:44.733 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr
+2021-04-10 06:59:44.734 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-04-10T06:59:44.734Z

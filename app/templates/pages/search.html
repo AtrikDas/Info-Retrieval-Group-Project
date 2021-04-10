@@ -1,5 +1,5 @@
 {% extends 'layout.html' %} {% block body %}
-<div class="welcome-area" id="welcome">
+<div class="welcome-area-s" id="welcome">
 	<div class="header-text">
 		<div class="container">
 			<div class="row">
@@ -86,7 +86,7 @@
 									method="get">
 									{% if suggestions %} Did you mean
 									<a href="/searchResults?search={{suggestions[0].word}}&{{countries}}">
-										{{suggestions[0].word}}</a>? { {% endif %}
+										{{suggestions[0].word}}</a> {% endif %}
 								</div>
 							</form>
 						</div>
@@ -138,6 +138,7 @@
 						<p>{{tweet.content[0]}}</p>
 						<span>{{tweet.date[0]}} <br> {{tweet.country[0]}}</span>
 						<div class="row">
+							<h3> 0</h3>
 							<i class="material-icons">favorite</i>
 							<p><b>{{tweet.likeCount[0]}}</b></p>
 							<i class="material-icons">repeat</i>

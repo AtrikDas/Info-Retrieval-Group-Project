@@ -55,9 +55,10 @@ section {
   display: inline-block;
   background-color: #4883ff;
   color: #fff;
+  border-radius: 20px;
   font-size: 15px;
   font-weight: 500;
-  padding: 10px 16px;
+  padding: 10px 10px;
   text-decoration: none;
   border: 2px solid #4883ff;
   transition: all 0.5s;
@@ -360,7 +361,7 @@ section.banner {
 }
 
 .banner .banner-caption .blue-button {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .banner .submit-form {
@@ -645,6 +646,16 @@ section.featured-places {
 
 .featured-places .featured-item .down-content p {
   margin-bottom: 20px;
+}
+
+.featured-places .featured-item .down-content .row h3 {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.featured-places .featured-item .down-content h3 {
+	color: #fff;
+	margin-bottom: 20px;
 }
 
 .featured-places .featured-item .down-content .col-md-6 {
