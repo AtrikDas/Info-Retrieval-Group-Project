@@ -1,235 +1,118 @@
-2021-04-10 07:15:45.216 INFO  (main) [   ] o.e.j.u.log Logging initialized @3755ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-04-10 07:15:45.685 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_282-b08
-2021-04-10 07:15:45.740 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/contexts/] at interval 0
-2021-04-10 07:15:47.857 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-04-10 07:15:47.889 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-04-10 07:15:47.889 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-04-10 07:15:47.891 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2021-04-10 07:15:48.046 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-04-10 07:15:48.059 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.0
-2021-04-10 07:15:48.059 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-04-10 07:15:48.059 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr
-2021-04-10 07:15:48.061 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-04-10T07:15:48.061Z
-2021-04-10 07:15:48.089 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr
-2021-04-10 07:15:48.089 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\solr.xml
-2021-04-10 07:15:48.314 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701, but no JMX reporters were configured - adding default JMX reporter.
-2021-04-10 07:15:49.728 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2021-04-10 07:15:50.114 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6bb75258[provider=null,keyStore=null,trustStore=null]
-2021-04-10 07:15:50.114 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6bb75258[provider=null,keyStore=null,trustStore=null]
-2021-04-10 07:15:50.456 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5df417a7[provider=null,keyStore=null,trustStore=null]
-2021-04-10 07:15:50.456 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5df417a7[provider=null,keyStore=null,trustStore=null]
-2021-04-10 07:15:50.580 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2021-04-10 07:15:50.924 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2021-04-10 07:15:50.926 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2021-04-10 07:15:51.092 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
-2021-04-10 07:15:51.092 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
-2021-04-10 07:15:51.100 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
-2021-04-10 07:15:51.203 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr
-2021-04-10 07:15:51.203 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [final_core]
-2021-04-10 07:15:51.284 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.0
-2021-04-10 07:15:51.645 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Schema name=default-config
-2021-04-10 07:15:52.417 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2021-04-10 07:15:52.417 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2021-04-10 07:15:52.417 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2021-04-10 07:15:52.417 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2021-04-10 07:15:52.417 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2021-04-10 07:15:52.431 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2021-04-10 07:15:52.431 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2021-04-10 07:15:52.431 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2021-04-10 07:15:52.431 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2021-04-10 07:15:52.431 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2021-04-10 07:15:52.513 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@3012646b{/solr,file:///C:/Users/VISHAL%20RAJ/Desktop/4041/Info-Retrieval-Group-Project/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server/solr-webapp/webapp}
-2021-04-10 07:15:52.543 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2beee7ff{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-04-10 07:15:52.543 INFO  (main) [   ] o.e.j.s.Server Started @11077ms
-2021-04-10 07:15:52.843 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-04-10 07:15:52.964 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.CoreContainer Creating SolrCore 'final_core' using configuration from instancedir C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core, trusted=true
-2021-04-10 07:15:53.041 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.final_core' (registry 'solr.core.final_core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
-2021-04-10 07:15:53.083 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrCore [[final_core] ] Opening new SolrCore at [C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core], dataDir=[C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core\data\]
-2021-04-10 07:15:54.439 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-04-10 07:15:54.439 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-04-10 07:15:54.500 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-04-10 07:15:54.500 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-04-10 07:15:54.526 INFO  (qtp2134607032-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=88
-2021-04-10 07:15:55.049 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\VISHAL RAJ\Desktop\4041\Info-Retrieval-Group-Project\solr\server\solr\final_core\conf
-2021-04-10 07:15:55.118 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-04-10 07:15:55.134 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-04-10 07:15:55.159 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-04-10 07:15:55.210 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-04-10 07:15:55.210 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-04-10 07:15:55.227 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.SolrCore [final_core]  Registered new searcher autowarm time: 0 ms
-2021-04-10 07:17:06.622 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=3064 status=0 QTime=302
-2021-04-10 07:17:06.917 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,attributes = {startup=lazy, name=/spell, class=solr.SearchHandler},args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=5,spellcheck.collate=true,spellcheck.collateExtendedResults=true,spellcheck.maxCollationTries=10,spellcheck.maxCollations=5,df=_text_},last-components=[spellcheck]}} 
-2021-04-10 07:17:06.945 INFO  (qtp2134607032-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=26
-2021-04-10 07:17:17.624 INFO  (qtp2134607032-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618039037287} status=0 QTime=2
-2021-04-10 07:17:17.676 INFO  (qtp2134607032-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618039037288} status=0 QTime=54
-2021-04-10 07:17:17.741 INFO  (qtp2134607032-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618039037288} status=0 QTime=60
-2021-04-10 07:20:03.743 INFO  (qtp2134607032-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=3064 status=0 QTime=16
-2021-04-10 07:20:03.883 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=2
-2021-04-10 07:20:08.819 INFO  (qtp2134607032-42) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=3064 status=0 QTime=4
-2021-04-10 07:20:08.873 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=1
-2021-04-10 07:20:45.961 INFO  (qtp2134607032-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618039037287} status=0 QTime=0
-2021-04-10 07:20:45.976 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1618039037289&ts=1618039037289} status=503 QTime=3
-2021-04-10 07:20:45.988 INFO  (qtp2134607032-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1618039245942} status=0 QTime=17
-2021-04-10 07:20:45.998 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1618039245944} status=0 QTime=26
-2021-04-10 07:20:46.089 INFO  (qtp2134607032-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618039037288} status=0 QTime=126
-2021-04-10 07:20:46.089 INFO  (qtp2134607032-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/admin/system params={wt=json&_=1618039245943} status=0 QTime=121
-2021-04-10 07:20:48.223 INFO  (qtp2134607032-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618039037287} status=0 QTime=1
-2021-04-10 07:20:48.287 INFO  (qtp2134607032-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618039037288} status=0 QTime=63
-2021-04-10 07:20:51.599 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*:*&_=1618039248164} hits=9564 status=0 QTime=4
-2021-04-10 07:21:39.376 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*kamala*&_=1618039248164} hits=0 status=0 QTime=82
-2021-04-10 07:21:51.789 ERROR (qtp2134607032-25) [   x:final_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '*content : kamala*': Encountered " ":" ": "" at line 1, column 9.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:220)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:332)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
-	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse '*content : kamala*': Encountered " ":" ": "" at line 1, column 9.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
-	... 45 more
-Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 9.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
-	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:132)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
-	... 48 more
-
-2021-04-10 07:21:51.789 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*content+:+kamala*&_=1618039248164} status=400 QTime=12
-2021-04-10 07:22:03.772 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content+:+kamala&_=1618039248164} hits=102 status=0 QTime=3
-2021-04-10 07:22:48.325 INFO  (qtp2134607032-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:harris&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=108 status=0 QTime=14
-2021-04-10 07:22:48.474 INFO  (qtp2134607032-46) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=harris&spellcheck=true} hits=0 status=0 QTime=2
-2021-04-10 07:24:08.907 INFO  (qtp2134607032-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:harris&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=108 status=0 QTime=7
-2021-04-10 07:24:08.987 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=harris&spellcheck=true} hits=0 status=0 QTime=3
-2021-04-10 07:24:18.127 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:harris&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=108 status=0 QTime=4
-2021-04-10 07:24:18.174 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=harris&spellcheck=true} hits=0 status=0 QTime=1
-2021-04-10 07:24:33.099 INFO  (qtp2134607032-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:harris&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=108 status=0 QTime=3
-2021-04-10 07:24:33.132 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=harris&spellcheck=true} hits=0 status=0 QTime=2
-2021-04-10 07:24:48.360 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:harris&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=108 status=0 QTime=3
-2021-04-10 07:24:48.397 INFO  (qtp2134607032-46) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=harris&spellcheck=true} hits=0 status=0 QTime=1
-2021-04-10 07:25:27.804 INFO  (qtp2134607032-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:tamil&fq=country:(India)&rows=100&wt=json} hits=1 status=0 QTime=10
-2021-04-10 07:25:27.884 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=tamil&spellcheck=true} hits=0 status=0 QTime=68
-2021-04-10 07:25:35.540 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:tail&fq=country:(India)&rows=100&wt=json} hits=1 status=0 QTime=1
-2021-04-10 07:25:35.574 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=tail&spellcheck=true} hits=0 status=0 QTime=25
-2021-04-10 07:25:44.473 INFO  (qtp2134607032-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:tall&fq=country:(India)&rows=100&wt=json} hits=1 status=0 QTime=3
-2021-04-10 07:25:44.493 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=tall&spellcheck=true} hits=0 status=0 QTime=13
-2021-04-10 07:26:20.879 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:Biden&fq=country:(Brazil)&rows=100&wt=json} hits=267 status=0 QTime=5
-2021-04-10 07:26:20.947 INFO  (qtp2134607032-46) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=Biden&spellcheck=true} hits=0 status=0 QTime=1
-2021-04-10 07:26:41.390 INFO  (qtp2134607032-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:biden&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=1621 status=0 QTime=5
-2021-04-10 07:26:41.442 INFO  (qtp2134607032-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=biden&spellcheck=true} hits=0 status=0 QTime=2
-2021-04-10 07:27:29.167 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content+:+bidan&fq=country+:+Brazil&sort=retweetCount+desc&rows=100&_=1618039248164} hits=0 status=0 QTime=21
-2021-04-10 07:27:42.120 INFO  (qtp2134607032-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content+:+biden&fq=country+:+Brazil&sort=retweetCount+desc&rows=100&_=1618039248164} hits=267 status=0 QTime=17
-2021-04-10 07:28:04.631 INFO  (qtp2134607032-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:biden&fq=country:(Brazil)&rows=100&wt=json} hits=267 status=0 QTime=2
-2021-04-10 07:28:04.685 INFO  (qtp2134607032-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=biden&spellcheck=true} hits=0 status=0 QTime=2
-2021-04-10 07:28:35.628 INFO  (qtp2134607032-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content+:+biden&fq=country+:+Brazil&sort=retweetCount+desc&rows=50&_=1618039248164} hits=267 status=0 QTime=1
+2021-04-11 07:07:34.144 INFO  (main) [   ] o.e.j.u.log Logging initialized @892ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-04-11 07:07:34.307 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 11.0.10+9-Ubuntu-0ubuntu1.20.04
+2021-04-11 07:07:34.326 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/contexts/] at interval 0
+2021-04-11 07:07:34.626 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-04-11 07:07:34.635 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-04-11 07:07:34.635 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-04-11 07:07:34.638 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-04-11 07:07:34.704 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-04-11 07:07:34.710 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solrâ„¢ version 8.8.0
+2021-04-11 07:07:34.710 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-04-11 07:07:34.710 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr
+2021-04-11 07:07:34.710 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-04-11T07:07:34.710420Z
+2021-04-11 07:07:34.737 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr
+2021-04-11 07:07:34.737 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr/solr.xml
+2021-04-11 07:07:34.830 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31, but no JMX reporters were configured - adding default JMX reporter.
+2021-04-11 07:07:35.284 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-04-11 07:07:35.467 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3c4262d1[provider=null,keyStore=null,trustStore=null]
+2021-04-11 07:07:35.467 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3c4262d1[provider=null,keyStore=null,trustStore=null]
+2021-04-11 07:07:35.619 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@37af1f93[provider=null,keyStore=null,trustStore=null]
+2021-04-11 07:07:35.619 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@37af1f93[provider=null,keyStore=null,trustStore=null]
+2021-04-11 07:07:35.678 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-04-11 07:07:35.818 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-04-11 07:07:35.820 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-04-11 07:07:35.888 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-04-11 07:07:35.889 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-04-11 07:07:35.895 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-04-11 07:07:35.930 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr
+2021-04-11 07:07:35.931 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [final_core]
+2021-04-11 07:07:35.969 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.0
+2021-04-11 07:07:35.993 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@22d6f11{/solr,file:///home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr-webapp/webapp}
+2021-04-11 07:07:36.004 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@c5dc4a2{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-04-11 07:07:36.004 INFO  (main) [   ] o.e.j.s.Server Started @2753ms
+2021-04-11 07:07:36.096 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-11 07:07:36.348 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-11 07:07:36.348 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-11 07:07:36.348 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-11 07:07:36.348 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-11 07:07:36.348 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType DateRangeField does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-11 07:07:36.353 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-11 07:07:36.353 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-11 07:07:36.353 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-11 07:07:36.353 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-11 07:07:36.353 WARN  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-11 07:07:36.493 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-11 07:07:36.525 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.CoreContainer Creating SolrCore 'final_core' using configuration from instancedir /home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr/final_core, trusted=true
+2021-04-11 07:07:36.547 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.final_core' (registry 'solr.core.final_core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@8462f31
+2021-04-11 07:07:36.560 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.c.SolrCore [[final_core] ] Opening new SolrCore at [/home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr/final_core], dataDir=[/home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr/final_core/data/]
+2021-04-11 07:07:37.049 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-04-11 07:07:37.049 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-04-11 07:07:37.070 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-11 07:07:37.070 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-11 07:07:37.275 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/adi/Workspace/Projects/Info-Retrieval-Group-Project/solr/server/solr/final_core/conf
+2021-04-11 07:07:37.289 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-11 07:07:37.294 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-11 07:07:37.303 INFO  (coreLoadExecutor-13-thread-1) [   x:final_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-11 07:07:37.327 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-11 07:07:37.327 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-11 07:07:37.334 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.SolrCore [final_core]  Registered new searcher autowarm time: 0 ms
+2021-04-11 07:07:40.128 INFO  (qtp1935122449-24) [   x:final_core] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,attributes = {startup=lazy, name=/spell, class=solr.SearchHandler},args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=5,spellcheck.collate=true,spellcheck.collateExtendedResults=true,spellcheck.maxCollationTries=10,spellcheck.maxCollations=5,df=_text_},last-components=[spellcheck]}} 
+2021-04-11 07:07:40.233 INFO  (qtp1935122449-24) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumb&spellcheck=true} hits=0 status=0 QTime=105
+2021-04-11 07:07:46.521 INFO  (qtp1935122449-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumb&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=0 status=0 QTime=27
+2021-04-11 07:07:46.541 INFO  (qtp1935122449-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumb&spellcheck=true} hits=0 status=0 QTime=13
+2021-04-11 07:07:50.307 INFO  (qtp1935122449-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumb&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=0 status=0 QTime=2
+2021-04-11 07:07:50.322 INFO  (qtp1935122449-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumb&spellcheck=true} hits=0 status=0 QTime=7
+2021-04-11 07:08:34.098 INFO  (qtp1935122449-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:bidan&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=0 status=0 QTime=49
+2021-04-11 07:08:34.137 INFO  (qtp1935122449-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=bidan&spellcheck=true} hits=0 status=0 QTime=22
+2021-04-11 08:05:40.956 INFO  (qtp1935122449-18) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Russia)&rows=100&wt=json} hits=345 status=0 QTime=24
+2021-04-11 08:05:41.060 INFO  (qtp1935122449-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-11 08:14:02.991 INFO  (qtp1935122449-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Russia)&rows=100&wt=json} hits=345 status=0 QTime=12
+2021-04-11 08:14:03.027 INFO  (qtp1935122449-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=3
+2021-04-11 08:32:33.257 INFO  (qtp1935122449-19) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Russia)&rows=100&wt=json} hits=345 status=0 QTime=16
+2021-04-11 08:32:33.288 INFO  (qtp1935122449-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-11 08:57:36.325 INFO  (qtp1935122449-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Russia)&rows=100&wt=json} hits=345 status=0 QTime=4
+2021-04-11 08:57:36.355 INFO  (qtp1935122449-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=1
+2021-04-11 09:28:25.525 INFO  (qtp1935122449-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumb&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=0 status=0 QTime=1
+2021-04-11 09:28:25.537 INFO  (qtp1935122449-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumb&spellcheck=true} hits=0 status=0 QTime=6
+2021-04-11 09:38:07.878 INFO  (qtp1935122449-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{commit=} 0 14
+2021-04-11 09:38:16.062 INFO  (qtp1935122449-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618133895970} status=0 QTime=1
+2021-04-11 09:38:16.071 INFO  (qtp1935122449-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618133895970} status=0 QTime=10
+2021-04-11 09:38:16.081 INFO  (qtp1935122449-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618133895970} status=0 QTime=7
+2021-04-11 09:38:17.768 INFO  (qtp1935122449-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618133895970} status=0 QTime=0
+2021-04-11 09:38:17.777 INFO  (qtp1935122449-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1618133897760} status=0 QTime=4
+2021-04-11 09:38:17.777 INFO  (qtp1935122449-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1618133897760} status=0 QTime=7
+2021-04-11 09:38:17.782 INFO  (qtp1935122449-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618133895970} status=0 QTime=15
+2021-04-11 09:38:17.784 INFO  (qtp1935122449-23) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1618133895970&ts=1618133895970} status=503 QTime=4
+2021-04-11 09:38:17.784 INFO  (qtp1935122449-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/admin/system params={wt=json&_=1618133897760} status=0 QTime=12
+2021-04-11 09:38:20.386 INFO  (qtp1935122449-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618133895970} status=0 QTime=0
+2021-04-11 09:38:20.392 INFO  (qtp1935122449-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618133895970} status=0 QTime=5
+2021-04-11 09:38:21.771 INFO  (qtp1935122449-25) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*:*&_=1618133900361} hits=9564 status=0 QTime=10
+2021-04-11 09:41:37.257 INFO  (qtp1935122449-42) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*:*&_=1618133900361} hits=9564 status=0 QTime=1
+2021-04-11 09:41:37.900 INFO  (qtp1935122449-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*:*&_=1618133900361} hits=9564 status=0 QTime=1
+2021-04-11 09:41:38.032 INFO  (qtp1935122449-42) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*:*&_=1618133900361} hits=9564 status=0 QTime=1
+2021-04-11 09:41:39.785 INFO  (qtp1935122449-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618134099704} status=0 QTime=0
+2021-04-11 09:41:39.791 INFO  (qtp1935122449-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618134099704} status=0 QTime=5
+2021-04-11 09:41:41.957 INFO  (qtp1935122449-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*:*&_=1618134099758} hits=9564 status=0 QTime=1
+2021-04-11 09:42:03.134 INFO  (qtp1935122449-16) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{commit=} 0 0
+2021-04-11 09:42:38.329 INFO  (qtp1935122449-41) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1696736643168337920)} 0 78
+2021-04-11 09:42:38.366 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-11 09:42:38.372 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.SolrCore [final_core]  Registered new searcher autowarm time: 4 ms
+2021-04-11 09:42:38.385 INFO  (qtp1935122449-21) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{commit=} 0 47
+2021-04-11 09:42:48.449 INFO  (qtp1935122449-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618134168352} status=0 QTime=0
+2021-04-11 09:42:48.455 INFO  (qtp1935122449-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618134168352} status=0 QTime=4
+2021-04-11 09:42:50.098 INFO  (qtp1935122449-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*:*&_=1618134168422} hits=0 status=0 QTime=1
+2021-04-11 09:43:52.845 INFO  (qtp1935122449-42) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={}{add=[02487460-1b5f-47c7-a638-833258eaba21 (1696736717731528704), 5fe8035c-c3e0-4fab-8bc7-031959509a02 (1696736717789200384), 98608477-9e31-4cdf-9d59-e168ff9dce26 (1696736717793394688), 23a64ee0-9375-4f64-a9b1-3e66ee90705f (1696736717795491840), ade3cdea-4ec5-49a5-b729-07290ef466aa (1696736717797588992), 6ccde291-7169-406c-9c75-7b84a795f86a (1696736717799686144), b73bce5f-ef41-4586-8de6-d446b4ce4dd4 (1696736717801783296), 3b983d6e-ef55-49eb-a116-98256f0bdf7b (1696736717803880448), 77bb40e5-6f28-45fd-8658-c60e6c30cd1c (1696736717807026176), 083c87c3-a41d-45cb-8b92-46952a3c16e0 (1696736717808074752), ... (27146 adds)]} 0 3459
+2021-04-11 09:43:54.174 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-11 09:43:54.178 INFO  (searcherExecutor-15-thread-1-processing-x:final_core) [   x:final_core] o.a.s.c.SolrCore [final_core]  Registered new searcher autowarm time: 0 ms
+2021-04-11 09:43:54.180 INFO  (qtp1935122449-17) [   x:final_core] o.a.s.u.p.LogUpdateProcessorFactory [final_core]  webapp=/solr path=/update params={commit=true}{commit=} 0 1330
+2021-04-11 09:43:59.984 INFO  (qtp1935122449-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1618134239888} status=0 QTime=0
+2021-04-11 09:43:59.992 INFO  (qtp1935122449-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1618134239889} status=0 QTime=8
+2021-04-11 09:44:01.304 INFO  (qtp1935122449-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=*:*&_=1618134239957} hits=27146 status=0 QTime=11
+2021-04-11 09:44:40.239 INFO  (qtp1935122449-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=4221 status=0 QTime=17
+2021-04-11 09:44:40.286 INFO  (qtp1935122449-16) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-11 09:45:06.797 INFO  (qtp1935122449-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=4221 status=0 QTime=2
+2021-04-11 09:45:06.814 INFO  (qtp1935122449-21) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=0
+2021-04-11 09:45:18.390 INFO  (qtp1935122449-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trumb&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=0 status=0 QTime=1
+2021-04-11 09:45:18.403 INFO  (qtp1935122449-17) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trumb&spellcheck=true} hits=0 status=0 QTime=8
+2021-04-11 09:45:22.251 INFO  (qtp1935122449-22) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/select params={q=content:trump&fq=country:(Brazil+OR+Mexico+OR+India+OR+Canada+OR+UK+OR+South+Korea+OR+Iran+OR+Israel+OR+Russia+OR+Ukraine)&rows=100&wt=json} hits=4221 status=0 QTime=1
+2021-04-11 09:45:22.266 INFO  (qtp1935122449-41) [   x:final_core] o.a.s.c.S.Request [final_core]  webapp=/solr path=/spell params={spellcheck.q=trump&spellcheck=true} hits=0 status=0 QTime=0
