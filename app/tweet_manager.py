@@ -23,7 +23,13 @@ class TweetManager:
     @staticmethod
     def get_tweets_by_exact_match(query, countries = []):
         try:
-            response = TweetManager.solr.search(f"content:{query}", fq=f"country:{countries}", rows=100)
+            if "content:" in query or "date:" in query or "country:" in query:
+                if "country:" in query:
+                    response = TweetManager.solr.search(query, rows=200)
+                else:
+                    response = TweetManager.solr.search(query, fq=f"country:{countries}", rows=100)
+            else:
+                response = TweetManager.solr.search(f"content:{query}", fq=f"country:{countries}", rows=100)
         except:
             logging.error("Error in getting tweets by exact match")
             return []
@@ -69,17 +75,14 @@ class TweetManager:
             ranked_tweets.append(tweet)
         return ranked_tweets
     
+    @staticmethod
     def rank_by_date_tweets(tweets):
         return sorted(tweets, key= lambda x: x['date'][0], reverse=True)
         
+    @staticmethod
     def rank_by_likes_tweets(tweets):
-        try:
-            return sorted(tweets, key= lambda x: x['likeCount'][0], reverse=True)
-        except:
-            return tweets
+        return sorted(tweets, key= lambda x: x['likeCount'][0], reverse=True)
 
+    @staticmethod
     def rank_by_retweets_tweets(tweets):
-        try:
-            return sorted(tweets, key= lambda x: x['retweetCount'][0], reverse=True)
-        except:
-            return tweets
+        return sorted(tweets, key= lambda x: x['retweetCount'][0], reverse=True)
