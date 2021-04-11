@@ -28,8 +28,7 @@ def search_results():
     if search_query:
         tweets, suggestions = filter(search_query, ranking, countries)
         countries = "&".join([f"country{i}="+request.args.get(f"country{i}") for i in range(1, 11) if request.args.get(f"country{i}") != None])
-        print("HERE IS THE TWEET")
-        print(tweets[0])
+
         if len(suggestions) == 0:
             suggestions = []
         if len(tweets) == 0:
@@ -44,8 +43,9 @@ def geospatial_search():
     return render_template("pages/map.html")
 
 
-@application.route("/plotly/<filename>")
-def plotly(filename):
+@application.route("/plotly")
+def plotly():
+    filename = request.args.get('filename')
     return send_from_directory(f"{BASE_DIR}/static/js", filename=filename)
 
 

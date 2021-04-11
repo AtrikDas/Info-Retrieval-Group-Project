@@ -10,7 +10,8 @@ import datetime
 class TweetManager:
     solr = pysolr.Solr('http://localhost:8983/solr/final_core', always_commit=True)
     # solr.optimize()
-    
+
+
     @staticmethod
     def extract_tweets(query, countries = []):
         tweets = TweetManager.get_tweets_by_exact_match(query, countries)     
@@ -19,6 +20,7 @@ class TweetManager:
         for tweet in tweets:
             tweet['date'][0] = datetime.datetime.strptime(tweet['date'][0], "%Y-%m-%dT%H:%M:%SZ")
         return tweets
+
 
     @staticmethod
     def get_tweets_by_exact_match(query, countries = []):
@@ -36,6 +38,7 @@ class TweetManager:
         tweets = list(map(lambda x: x, response))
         return tweets
 
+
     @staticmethod
     def spell_check(query):
         try:
@@ -49,6 +52,7 @@ class TweetManager:
             return []
 
         return suggestions
+
 
     @staticmethod
     def rank_by_most_relevant_tweets(query, tweets):
@@ -74,14 +78,17 @@ class TweetManager:
             tweet = tweets[int(score[0])]
             ranked_tweets.append(tweet)
         return ranked_tweets
-    
+
+
     @staticmethod
     def rank_by_date_tweets(tweets):
         return sorted(tweets, key= lambda x: x['date'][0], reverse=True)
-        
+
+
     @staticmethod
     def rank_by_likes_tweets(tweets):
         return sorted(tweets, key= lambda x: x['likeCount'][0], reverse=True)
+
 
     @staticmethod
     def rank_by_retweets_tweets(tweets):

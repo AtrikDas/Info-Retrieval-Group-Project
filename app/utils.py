@@ -20,7 +20,7 @@ def filter(search_query, ranking= None, countries = []):
 
 def geospatial_graph():
     fig = Geospatial_Graph.generate_graph()
-    fig.show()
+    ig.show()
 
 
 if __name__ == "__main__":
