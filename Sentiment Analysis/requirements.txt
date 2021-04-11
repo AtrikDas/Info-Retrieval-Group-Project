@@ -1,0 +1,9 @@
+transformers=4.3.3
+pandas
+numpy
+tensorflow
+torch
+keras
+scikit-learn
+tqdm
+ast

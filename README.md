@@ -8,7 +8,7 @@ CZ4034 Course Project Twitter News Retrieval System for the US Presedential Elec
 
 ```bash
     cd solr
-    ./bin/solr start -p 7364
+    ./bin/solr start
 ```
 
 2. To start the flask app:
